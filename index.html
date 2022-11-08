@@ -1,0 +1,90 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Image Comparison</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Figtree:300,400,500,600,700,800,900" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="./js/image-comparison.js"></script>
+  </head>
+
+  <body>
+
+    <div class="single-comparison">
+    <figure class="cd-image-container">
+      <img src="./images/fm_01.png" alt="Original Image" />
+      <span class="cd-image-label" data-type="original">Before</span>
+
+      <div class="cd-resize-img">
+        <!-- the resizable image on top -->
+        <img src="./images/fm_02.png" alt="Modified Image" />
+        <span class="cd-image-label" data-type="modified">After</span>
+      </div>
+
+      <span class="cd-handle"></span>
+    </figure>
+    <div class="caption">
+      <h2>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+        ligula eget dolor. Aenean massa.
+      </h2>
+    </div>
+
+<a href="#two">
+    <button>Next</button>
+</a>
+
+    </div>
+
+    <div class="single-comparison" id="two">
+    <figure class="cd-image-container">
+      <img src="./images/fm_04.png" alt="Original Image" />
+      <span class="cd-image-label" data-type="original">Before</span>
+
+      <div class="cd-resize-img">
+        <!-- the resizable image on top -->
+        <img src="./images/fm_03.png" alt="Modified Image" />
+        <span class="cd-image-label" data-type="modified">After</span>
+      </div>
+
+      <span class="cd-handle"></span>
+    </figure>
+    <div class="caption">
+      <h2>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+        ligula eget dolor. Aenean massa.
+      </h2>
+    </div>
+
+<a href="#three">
+    <button>Next</button>
+</a>
+    </div>
+
+    <div class="single-comparison" id="three">
+    <figure class="cd-image-container">
+      <img src="./images/fm_06.png" alt="Original Image" />
+      <span class="cd-image-label" data-type="original">Before</span>
+
+      <div class="cd-resize-img">
+        <!-- the resizable image on top -->
+        <img src="./images/fm_05.png" alt="Modified Image" />
+        <span class="cd-image-label" data-type="modified">After</span>
+      </div>
+
+      <span class="cd-handle"></span>
+    </figure>
+    <div class="caption">
+      <h2>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+        ligula eget dolor. Aenean massa.
+      </h2>
+    </div>
+    </div>
+
+  </body>
+</html>
