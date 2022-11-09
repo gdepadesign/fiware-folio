@@ -5,86 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Image Comparison</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css?family=Figtree:300,400,500,600,700,800,900" rel="stylesheet" />
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css">
+    <script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js'></script>
     <script src="./js/image-comparison.js"></script>
   </head>
 
   <body>
 
-    <div class="single-comparison">
-    <figure class="cd-image-container">
-      <img src="./images/fm_01.png" alt="Original Image" />
-      <span class="cd-image-label" data-type="original">Previous</span>
-
-      <div class="cd-resize-img">
-        <!-- the resizable image on top -->
-        <img src="./images/fm_02.png" alt="Modified Image" />
-        <span class="cd-image-label" data-type="modified">Current</span>
-      </div>
-
-      <span class="cd-handle"></span>
-    </figure>
-    <div class="caption">
-      <h2>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-        ligula eget dolor. Aenean massa.
-      </h2>
-    </div>
-
-<a href="#two">
+<section class="content-container" id="homepage">
+<div class="header"><h1>The FIWARE Marketplace</h1><h2>Homepage</h2></div> 
+<div class="label-container">
+  <div class="label">Before</div>
+  <div class="label">After</div>
+</div>
+<div id="juxtapose"></div>
+<div class="caption">
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+</div>
+<a class="next-section" href="#category-page">
     <button>Next</button>
 </a>
+</section>
 
-    </div>
 
-    <div class="single-comparison" id="two">
-    <figure class="cd-image-container">
-      <img src="./images/fm_04.png" alt="Original Image" />
-      <span class="cd-image-label" data-type="original">Before</span>
-
-      <div class="cd-resize-img">
-        <!-- the resizable image on top -->
-        <img src="./images/fm_03.png" alt="Modified Image" />
-        <span class="cd-image-label" data-type="modified">After</span>
-      </div>
-
-      <span class="cd-handle"></span>
-    </figure>
-    <div class="caption">
-      <h2>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-        ligula eget dolor. Aenean massa.
-      </h2>
-    </div>
-
-<a href="#three">
+<section class="content-container" id="category-page">
+<div class="header"><h1>The FIWARE Marketplace</h1><h2>Category Page</h2></div> 
+<div class="label-container">
+  <div class="label">Before</div>
+  <div class="label">After</div>
+</div>
+<div id="juxtapose-2"></div>
+<div class="caption">
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+</div>
+<a class="next-section" href="#solution">
     <button>Next</button>
 </a>
-    </div>
+</section>
 
-    <div class="single-comparison" id="three">
-    <figure class="cd-image-container">
-      <img src="./images/fm_06.png" alt="Original Image" />
-      <span class="cd-image-label" data-type="original">Before</span>
 
-      <div class="cd-resize-img">
-        <!-- the resizable image on top -->
-        <img src="./images/fm_05.png" alt="Modified Image" />
-        <span class="cd-image-label" data-type="modified">After</span>
-      </div>
-
-      <span class="cd-handle"></span>
-    </figure>
-    <div class="caption">
-      <h2>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-        ligula eget dolor. Aenean massa.
-      </h2>
-    </div>
-    </div>
+<section class="content-container" id="solution">
+<div class="header"><h1>The FIWARE Marketplace</h1><h2>Solution Page</h2></div> 
+<div class="label-container">
+  <div class="label">Before</div>
+  <div class="label">After</div>
+</div>    
+<div id="juxtapose-3"></div>
+<div class="caption">
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+</div>
+</section>
 
   </body>
 </html>
