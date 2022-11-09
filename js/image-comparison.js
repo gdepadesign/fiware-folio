@@ -1,4 +1,10 @@
 jQuery(document).ready(function ($) {
+
+  $(".cd-resize-img").each(function(el){
+    console.log($(this).find("img"))
+    $(this).find("img").css("width", $(".cd-image-container").width())
+  })
+  
   var dragging = false,
     scrolling = false,
     resizing = false;
@@ -34,6 +40,10 @@ jQuery(document).ready(function ($) {
 
   //upadate images label visibility
   $(window).on("resize", function () {
+      $(".cd-resize-img").each(function(el){
+    console.log($(this).find("img"))
+    $(this).find("img").css("width", $(".cd-image-container").width())
+  })
     if (!resizing) {
       resizing = true;
       !window.requestAnimationFrame
@@ -87,6 +97,7 @@ jQuery(document).ready(function ($) {
   ) {
     dragElement
       .on("mousedown vmousedown", function (e) {
+
         dragElement.addClass("draggable");
         resizeElement.addClass("resizable");
 
