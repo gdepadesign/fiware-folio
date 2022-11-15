@@ -20,7 +20,7 @@ div.jx-controller {height: 50px!important; width: 5px!important; margin-left: -1
 a.jx-knightlab {display: none!important;}
 @media only screen and (max-width: 480px) {
 #juxtapose, #juxtapose-2, #juxtapose-3 {width:90%!important; max-width:340px!important; max-height:215px!important}
-div.jx-image img {max-width: 340px!important;}
+div.jx-image img {max-width: 336px!important;}
 .header {width:90%;}
 .label-container {width:90%;}
 .caption {width:90%;}
