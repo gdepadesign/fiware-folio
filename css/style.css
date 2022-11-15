@@ -18,3 +18,9 @@ div.jx-controller {height: 50px!important; width: 5px!important; margin-left: -1
 .label {font-weight: 500; font-size: 14px; color: #000; text-transform: uppercase;}
 .caption {width:100%; max-width: 768px; margin:0 auto; padding-top:20px;}
 a.jx-knightlab {display: none!important;}
+@media only screen and (max-width: 480px) {
+#juxtapose, #juxtapose-2, #juxtapose-3 {width: 90%!important;}
+.header {width:90%;}
+.label-container {width:90%;}
+.caption {width:90%;}
+}
