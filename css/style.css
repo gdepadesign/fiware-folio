@@ -3,7 +3,7 @@ body {margin:0; font-family: "Figtree", sans-serif;}
 .cover-container .header {width:100%; max-width: 440px; padding: 6% 0 0;}
 .cover-container .header h1 {padding-bottom: 20px; font-size: 36px; color: #fff; font-weight: 700; margin:0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 .cover-container .header h2 {padding-bottom: 40px; font-size: 18px; line-height: 1.5em; color: #fff; font-weight: 500; margin:0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
-button {cursor: pointer; background-color: transparent; border: none; color: #fff; padding: 0; font-size: 15px; text-transform: uppercase; font-family: "Figtree", sans-serif; letter-spacing: 1px;}
+.cover-container button {cursor: pointer; background-color: transparent; border: none; color: #fff; padding: 0; font-size: 15px; text-transform: uppercase; font-family: "Figtree", sans-serif; letter-spacing: 1px;}
 .slide-container {min-height: 100vh;}
 .tns-outer {position:relative}
 .tns-controls {display: flex; justify-content: space-between; position: absolute; width: 100%; margin: 0 auto; z-index: 99999; top: 50%}
