@@ -6,15 +6,16 @@
     <title>FIWARE Marketplace Redesign</title>
     <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico">
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/text-hover.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/image-comparison.js"></script>
 
     <script type="module">
@@ -27,6 +28,8 @@
       });
 
       var scroll = new SmoothScroll('a[href*="#"]');
+
+      AOS.init();
 
     </script>
 
@@ -48,9 +51,9 @@
         <div class="header">
           <h1>Objectives</h1>
           <div class="intro-objectives">
-            <span class="objective fill-right">Lorem ipsum dolor sit amet</span>
-            <span class="objective fill-right">Aenean commodo ligula</span>
-            <span class="objective fill-right">Cum sociis natoque penatibus</span>
+            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"><span class="objective">Lorem ipsum dolor sit amet</span></div>
+            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"><span class="objective">Aenean commodo ligula</span></div>
+            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"><span class="objective">Cum sociis natoque penatibus</span></div>
           </div>
           <a href="#slider">
               <button class="btn btn-2 hover-slide-up"><span>explore</span></button>
