@@ -263,6 +263,9 @@ a.jx-knightlab {
     max-width: 340px !important;
     max-height: 215px !important;
   }
+  .tns-outer [aria-controls] {
+    color: #000;
+  }
   div.jx-image img {
     max-width: 336px !important;
   }
