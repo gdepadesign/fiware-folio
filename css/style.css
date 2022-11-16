@@ -143,6 +143,7 @@ button:disabled {
 }
 .intro-objectives {
   padding-bottom: 50px;
+  white-space: pre-line;
 }
 
 .slide-container {
@@ -289,8 +290,8 @@ a.jx-knightlab {
   .intro-container .header h2,
   .intro-container .header h3 {
     font-size: 2em;
+    line-height: 1.3em;
     margin: 0 0 15px 0;
-    padding-bottom: 20px;
   }
   .slide-container {
     padding: 90px 0;
