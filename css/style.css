@@ -2,6 +2,17 @@ body {
   margin: 0;
   font-family: "Figtree", sans-serif;
 }
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+::before,
+::after {
+  position: absolute;
+  content: "";
+}
 .cover-container {
   background-image: url("https://www.fiware.org/style/imgs/Marketplace/FIWAREMarketplace_Visual.svg");
   height: 100%;
@@ -38,20 +49,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/*.cover-container button {cursor: pointer; background-color: transparent; border: none; color: #fff; padding: 0; font-size: 15px; text-transform: uppercase; font-family: "Figtree", sans-serif; letter-spacing: 1px;}*/
-
-:active,
-:hover,
-:focus {
-  outline: 0 !important;
-  outline-offset: 0;
+button:disabled {
+  opacity: 0;
 }
-::before,
-::after {
-  position: absolute;
-  content: "";
-}
-
 .btn-holder {
   display: flex;
   flex-wrap: wrap;
@@ -180,7 +180,16 @@ div.jx-slider {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
   color: #000 !important;
 }
-div.jx-image {
+#juxtapose div.jx-image.jx-left,
+#juxtapose div.jx-image.jx-right {
+  cursor: ns-resize;
+}
+#juxtapose-2 div.jx-image.jx-left,
+#juxtapose-3 div.jx-image.jx-left {
+  cursor: initial;
+}
+#juxtapose-2 div.jx-image.jx-right,
+#juxtapose-3 div.jx-image.jx-right {
   cursor: ns-resize;
 }
 div.jx-image.jx-left,
@@ -234,6 +243,19 @@ a.jx-knightlab {
   display: none !important;
 }
 @media only screen and (max-width: 480px) {
+  .cover-container {
+    background-size: 380%;
+  }
+  .cover-container .header {
+    width: 80%;
+    padding: 20% 0 0;
+  }
+  .cover-container .header h2 {
+    font-size: 4em;
+  }
+  .slide-container {
+    padding: 90px 0;
+  }
   #juxtapose,
   #juxtapose-2,
   #juxtapose-3 {
@@ -246,6 +268,14 @@ a.jx-knightlab {
   }
   .header {
     width: 90%;
+  }
+  .tns-controls {
+    width: 95%;
+    top: 20px;
+    left: 10px;
+  }
+  #slider-mw {
+    min-height: 100vh;
   }
   .label-container {
     width: 90%;
