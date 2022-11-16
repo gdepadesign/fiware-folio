@@ -5,7 +5,7 @@
 
 .fill-left,
 .fill-right {
-    display: inline;
+    display: inline-block;
     text-decoration: none;
     -webkit-user-select: none
 }
