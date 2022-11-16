@@ -106,12 +106,11 @@ button:disabled {
   left: 0;
   right: 0;
   height: 0%;
-  width: 118%;
+  width: 120%;
 }
 .btn.hover-slide-up:hover::before {
   height: 100%;
 }
-
 .intro-container {
   padding-top: 8%;
   min-height: 100vh;
