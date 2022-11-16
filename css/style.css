@@ -1,34 +1,256 @@
-body {margin:0; font-family: "Figtree", sans-serif;}
-.cover-container {background-image: url("https://www.fiware.org/style/imgs/Marketplace/FIWAREMarketplace_Visual.svg"); height: 100%; background-position: center bottom; background-repeat: no-repeat; background-size: 80% 55%; background-color: #000; min-height: 100vh; display: flex; flex-direction: column;}
-.cover-container .header {width:100%; max-width: 440px; padding: 6% 0 0;}
-.cover-container .header h1 {padding-bottom: 20px; font-size: 36px; color: #fff; font-weight: 700; margin:0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
-.cover-container .header h2 {padding-bottom: 40px; font-size: 18px; line-height: 1.5em; color: #fff; font-weight: 500; margin:0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
-.cover-container button {cursor: pointer; background-color: transparent; border: none; color: #fff; padding: 0; font-size: 15px; text-transform: uppercase; font-family: "Figtree", sans-serif; letter-spacing: 1px;}
-.slide-container {min-height: 100vh;}
-.tns-outer {position:relative}
-.tns-controls {display: flex; justify-content: space-between; position: absolute; width: 100%; margin: 0 auto; z-index: 99999; top: 50%}
-.tns-outer [aria-controls] {background-color: transparent; box-shadow: none; border: none; font-family: "Figtree", sans-serif; font-size: 15px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase;}
-.tns-nav {display: none;}
-.header {width:100%; max-width: 768px; margin:0 auto; padding: 0; position: relative; text-align: left;}
-.header h1 {font-size: 20px; color: #212121; font-weight: 500; margin:0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
-.header h2 {font-size: 28px; color: #212121; font-weight: 700; margin:0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
-#juxtapose, #juxtapose-2, #juxtapose-3 {margin:0 auto; width: 100%!important; max-width: 768px; max-height: 430px;}
-div.jx-slider {height: 100%!important; max-width:100%; border-radius: 8px; box-shadow: 0 0 50px rgba(0, 0, 0, 0.1); color: #000!important;}
-div.jx-image {cursor: ns-resize;}
-div.jx-image.jx-left, div.jx-image.jx-right {overflow-x:hidden !important}
-div.jx-left {overflow: overlay!important;}
-div.jx-right {overflow: overlay!important; top:0;}
-div.jx-image img {max-width: 768px!important; width: auto!important; height:auto!important; position: relative!important;}
-div.jx-control {background-color: rgba(0,0,0,0.1)!important;}
-div.jx-controller {height: 50px!important; width: 5px!important; margin-left: -1px!important;}
-.label-container {width:100%; max-width: 768px; margin:20px auto 0; padding: 20px 0 20px; border-top: 1px solid #000; display:flex; flex-direction: row; justify-content: space-between;}
-.label {font-weight: 500; font-size: 14px; color: #000; text-transform: uppercase;}
-.caption {width:100%; max-width: 768px; margin:0 auto; padding-top:20px;}
-a.jx-knightlab {display: none!important;}
+body {
+  margin: 0;
+  font-family: "Figtree", sans-serif;
+}
+.cover-container {
+  background-image: url("https://www.fiware.org/style/imgs/Marketplace/FIWAREMarketplace_Visual.svg");
+  height: 100%;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 80% 55%;
+  background-color: #000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.cover-container .header {
+  width: 100%;
+  max-width: 440px;
+  padding: 7% 0 0;
+}
+.cover-container .header h1 {
+  padding-bottom: 0px;
+  font-size: 30px;
+  line-height: 1.5em;
+  color: #fff;
+  font-weight: 500;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.cover-container .header h2 {
+  padding-bottom: 40px;
+  font-size: 6em;
+  line-height: 1.2em;
+  color: #fff;
+  font-weight: 700;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*.cover-container button {cursor: pointer; background-color: transparent; border: none; color: #fff; padding: 0; font-size: 15px; text-transform: uppercase; font-family: "Figtree", sans-serif; letter-spacing: 1px;}*/
+
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+::before,
+::after {
+  position: absolute;
+  content: "";
+}
+
+.btn-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 10px auto 35px;
+}
+.btn {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  /* margin: 0px 25px 15px; */
+  min-width: 150px;
+}
+.btn span {
+  position: relative;
+  display: inline-block;
+  font-family: "Figtree", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 20px;
+  transition: 0.3s;
+}
+
+/*--- btn-2 ---*/
+.btn-2::before {
+  background-color: rgb(255, 255, 255);
+  transition: 0.3s ease-out;
+}
+.btn-2 span {
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  transition: 0.2s;
+  margin-left: -5px;
+}
+.btn-2 span:hover {
+  color: rgb(0, 0, 0);
+  transition: 0.2s 0.1s;
+}
+
+/* 9. hover-slide-right */
+.btn.hover-slide-right::before {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+}
+.btn.hover-slide-right:hover::before {
+  width: 100%;
+}
+
+.slide-container {
+  padding: 60px 0;
+}
+.tns-outer {
+  position: relative;
+}
+.tns-controls {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 99999;
+  top: 50%;
+}
+.tns-outer [aria-controls] {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  font-family: "Figtree", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.tns-nav {
+  display: none;
+}
+.header {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  text-align: left;
+}
+.header h1 {
+  font-size: 20px;
+  color: #212121;
+  font-weight: 500;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.header h2 {
+  font-size: 28px;
+  color: #212121;
+  font-weight: 700;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#juxtapose,
+#juxtapose-2,
+#juxtapose-3 {
+  margin: 0 auto;
+  width: 100% !important;
+  max-width: 768px;
+  max-height: 430px;
+}
+div.jx-slider {
+  height: 100% !important;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+  color: #000 !important;
+}
+div.jx-image {
+  cursor: ns-resize;
+}
+div.jx-image.jx-left,
+div.jx-image.jx-right {
+  overflow-x: hidden !important;
+}
+div.jx-left {
+  overflow: overlay !important;
+}
+div.jx-right {
+  overflow: overlay !important;
+  top: 0;
+}
+div.jx-image img {
+  max-width: 768px !important;
+  width: auto !important;
+  height: auto !important;
+  position: relative !important;
+}
+div.jx-control {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+div.jx-controller {
+  height: 50px !important;
+  width: 5px !important;
+  margin-left: -1px !important;
+}
+.label-container {
+  width: 100%;
+  max-width: 768px;
+  margin: 20px auto 0;
+  padding: 20px 0 20px;
+  border-top: 1px solid #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.label {
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+  text-transform: uppercase;
+}
+.caption {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+a.jx-knightlab {
+  display: none !important;
+}
 @media only screen and (max-width: 480px) {
-#juxtapose, #juxtapose-2, #juxtapose-3 {width:90%!important; max-width:340px!important; max-height:215px!important}
-div.jx-image img {max-width: 336px!important;}
-.header {width:90%;}
-.label-container {width:90%;}
-.caption {width:90%;}
+  #juxtapose,
+  #juxtapose-2,
+  #juxtapose-3 {
+    width: 90% !important;
+    max-width: 340px !important;
+    max-height: 215px !important;
+  }
+  div.jx-image img {
+    max-width: 336px !important;
+  }
+  .header {
+    width: 90%;
+  }
+  .label-container {
+    width: 90%;
+  }
+  .caption {
+    width: 90%;
+  }
 }

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" />
     <script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="./js/image-comparison.js"></script>
 
     <script type="module">
@@ -22,6 +23,9 @@
         swipeAngle: false,
         speed: 400
       });
+
+      var scroll = new SmoothScroll('a[href*="#"]');
+
     </script>
 
   </head>
@@ -30,12 +34,10 @@
       
       <div class="cover-container">
         <div class="header">
-          <h1>The FIWARE Marketplace</h1>
-          <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.</h2>
+          <h1>FIWARE Marketplace</h1>
+          <h2>Redesign</h2>
           <a href="#slider">
-              <button>Explore</button>
+              <button class="btn btn-2 hover-slide-right"><span>Explore</span></button>
           </a>
         </div>
       </div>
