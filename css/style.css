@@ -286,6 +286,9 @@ a.jx-knightlab {
   .cover-container .header h2 {
     font-size: 3em;
   }
+  .intro-container .header h1 {
+    padding-bottom: 0px;
+}
   .objective {
     font-size: 2em;
     line-height: 1.3em;
