@@ -26,8 +26,8 @@ body {
   flex-direction: column;
 }
 .cover-container .header {
-  width: 100%;
-  max-width: 440px;
+  width: 80%;
+  max-width: 2560px;
   padding: 7% 0 0;
 }
 .cover-container .header h1 {
@@ -132,7 +132,11 @@ button:disabled {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.intro-container .header h2 {
+.intro-objectives {
+  padding-bottom: 50px;
+  white-space: pre-line;
+}
+.objective {
   font-size: 4em;
   line-height: 1.5em;
   color: #fff;
@@ -141,11 +145,6 @@ button:disabled {
   -moz-osx-font-smoothing: grayscale;
   cursor:default;
 }
-.intro-objectives {
-  padding-bottom: 50px;
-  white-space: pre-line;
-}
-
 .slide-container {
   padding: 1.6% 0;
 }
@@ -285,13 +284,11 @@ a.jx-knightlab {
     padding: 20% 0 0;
   }
   .cover-container .header h2 {
-    font-size: 4em;
+    font-size: 3em;
   }
-  .intro-container .header h2,
-  .intro-container .header h3 {
+  .objective {
     font-size: 2em;
     line-height: 1.3em;
-    margin: 0 0 15px 0;
   }
   .slide-container {
     padding: 90px 0;
