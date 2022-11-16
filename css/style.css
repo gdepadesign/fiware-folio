@@ -1,6 +1,7 @@
 body {margin:0; font-family: "Figtree", sans-serif;}
 .tns-controls {display: flex; justify-content: space-between; position: relative; width: 95%; margin: 0 auto; z-index: 99999; top: 1.5vh}
 .tns-nav {display: none;}
+.tns-outer [aria-controls] {background-color: transparent; box-shadow: none; border: none; font-family: "Figtree", sans-serif; font-size: 15px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase;}
 .header {width:100%; max-width: 768px; margin:0 auto; padding: 0; position: relative; text-align: left;}
 .header h1 {font-size: 20px; color: #212121; font-weight: 500; margin:0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 .header h2 {font-size: 28px; color: #212121; font-weight: 700; margin:0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
