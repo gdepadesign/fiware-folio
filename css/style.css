@@ -1,14 +1,14 @@
 body {margin:0; font-family: "Figtree", sans-serif;}
-.tns-controls {display: flex; justify-content: space-between; position: relative; width: 95%; margin: 0 auto; z-index: 99999; top: 1.5vh}
-.tns-nav {display: none;}
+.tns-outer {position:relative}
+.tns-controls {display: flex; justify-content: space-between; position: absolute; width: 100%; margin: 0 auto; z-index: 99999; top: 50%}
 .tns-outer [aria-controls] {background-color: transparent; box-shadow: none; border: none; font-family: "Figtree", sans-serif; font-size: 15px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase;}
+.tns-nav {display: none;}
 .header {width:100%; max-width: 768px; margin:0 auto; padding: 0; position: relative; text-align: left;}
 .header h1 {font-size: 20px; color: #212121; font-weight: 500; margin:0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 .header h2 {font-size: 28px; color: #212121; font-weight: 700; margin:0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
-#juxtapose, #juxtapose-2, #juxtapose-3 {margin:0 auto; width: 100%!important; max-width: 768px; max-height: 430px}
+#juxtapose, #juxtapose-2, #juxtapose-3 {margin:0 auto; width: 100%!important; max-width: 768px; max-height: 430px;}
 div.jx-slider {height: 100%!important; max-width:100%; border-radius: 8px; box-shadow: 0 0 50px rgba(0, 0, 0, 0.1); color: #000!important;}
 div.jx-image {cursor: ns-resize;}
-div.jx-image.jx-left, div.jx-image.jx-right {overflow:hidden !important}
 div.jx-left {overflow: overlay!important;}
 div.jx-right {overflow: overlay!important; top:0;}
 div.jx-image img {max-width: 768px!important; width: auto!important; height:auto!important; position: relative!important;}
