@@ -1,4 +1,10 @@
 body {margin:0; font-family: "Figtree", sans-serif;}
+.cover-container {background-image: url("https://www.fiware.org/style/imgs/Marketplace/FIWAREMarketplace_Visual.svg"); height: 100%; background-position: center bottom; background-repeat: no-repeat; background-size: 80% 55%; background-color: #000; min-height: 100vh; display: flex; flex-direction: column;}
+.cover-container .header {width:100%; max-width: 440px; padding: 6% 0 0;}
+.cover-container .header h1 {padding-bottom: 20px; font-size: 36px; color: #fff; font-weight: 700; margin:0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+.cover-container .header h2 {padding-bottom: 40px; font-size: 18px; line-height: 1.5em; color: #fff; font-weight: 500; margin:0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+button {cursor: pointer; background-color: transparent; border: none; color: #fff; padding: 0; font-size: 15px; text-transform: uppercase; font-family: "Figtree", sans-serif; letter-spacing: 1px;}
+.slide-container {min-height: 100vh;}
 .tns-outer {position:relative}
 .tns-controls {display: flex; justify-content: space-between; position: absolute; width: 100%; margin: 0 auto; z-index: 99999; top: 50%}
 .tns-outer [aria-controls] {background-color: transparent; box-shadow: none; border: none; font-family: "Figtree", sans-serif; font-size: 15px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase;}
