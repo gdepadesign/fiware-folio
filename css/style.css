@@ -26,7 +26,7 @@ body {
   flex-direction: column;
 }
 .cover-container .header {
-  width: 80%;
+  width: 90%;
   max-width: 2560px;
   padding: 7% 0 0;
   text-align: center;
@@ -43,7 +43,7 @@ body {
 }
 .cover-container .header h2 {
   padding-bottom: 50px;
-  font-size: 4em;
+  font-size: 3em;
   line-height: 1.2em;
   color: #fff;
   font-weight: 700;
@@ -187,6 +187,16 @@ button:disabled {
   background-color: #000;
   display: flex;
   flex-direction: column;
+}
+.architecture-container .header h1 {
+  padding-bottom: 50px;
+  font-size: 30px;
+  line-height: 1.5em;
+  color: #fff;
+  font-weight: 500;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .slide-container {
   padding: 1.6% 0;
