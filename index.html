@@ -10,15 +10,47 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap" />
     <link rel="stylesheet"  href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/image-comparison.js"></script>
     <script src="./js/sticky-navigation.js"></script>
 
     <script type="module">
+const slider1 = tns({
+    container: ".slider1",
+    prevButton: ".prev",
+    nextButton: ".next",
+    center: true,
+    loop: false,
+    swipeAngle: false,
+    speed: 400,
+});
+
+const slider2 = tns({
+    container: ".slider2",
+    prevButton: ".prev",
+    nextButton: ".next",
+    center: true,
+    loop: false,
+    swipeAngle: false,
+    speed: 400,
+});
+
+const slider3 = tns({
+    container: ".slider3",
+    prevButton: ".prev",
+    nextButton: ".next",
+    center: true,
+    loop: false,
+    swipeAngle: false,
+    speed: 400,
+});
+
       var scroll = new SmoothScroll('a[href*="#"]');
 
       AOS.init();
@@ -114,15 +146,26 @@
       </section>
 
       <main class="spa-main">
-        <div class="spa-slide slide-container" id="home">
+        <div class="spa-slide page-container" id="home">
           <div class="section-title">
             <h2>Homepage</h2>
           </div>
           <div class="label-container">
-            <div class="label">Before</div>
-            <div class="label">After</div>
+            <button class="prev btn btn-3 hover-slide-left"><span class="label">Before</span></button>
+            <button class="next btn btn-3 hover-slide-right"><span class="next label">After</span></button>
           </div>
-          <div id="juxtapose"></div>
+          <div class="slider1" id="slider1">
+            <div class="slide-container">
+              <div class="slide">
+          <img class="slide-image" src="./images/fm_01.png" alt="user" />
+              </div>
+          </div>
+            <div class="slide-container">
+              <div class="slide">
+          <img class="slide-image" src="./images/fm_02.png" alt="user" />
+              </div>
+        </div>
+          </div>
           <div class="caption">
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
@@ -132,15 +175,26 @@
           </div>
         </div>
 
-        <div class="spa-slide slide-container" id="category">
+        <div class="spa-slide page-container" id="category">
           <div class="section-title">
             <h2>Category Page</h2>
           </div>
           <div class="label-container">
-            <div class="label">Before</div>
-            <div class="label">After</div>
+            <button class="prev btn btn-3 hover-slide-left"><span class="label">Before</span></button>
+            <button class="next btn btn-3 hover-slide-right"><span class="next label">After</span></button>
           </div>
-          <div id="juxtapose-2"></div>
+          <div class="slider2" id="slider2">
+            <div class="slide-container">
+              <div class="slide">
+          <img class="slide-image" src="./images/fm_04.png" alt="user" />
+              </div>
+          </div>
+            <div class="slide-container">
+              <div class="slide">
+          <img class="slide-image" src="./images/fm_03.png" alt="user" />
+              </div>
+        </div>
+          </div>
           <div class="caption">
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
@@ -150,15 +204,26 @@
           </div>
         </div>
 
-        <div class="spa-slide slide-container" id="solution">
+        <div class="spa-slide page-container" id="solution">
           <div class="section-title">
             <h2>Solution Page</h2>
           </div>
           <div class="label-container">
-            <div class="label">Before</div>
-            <div class="label">After</div>
+            <button class="prev btn btn-3 hover-slide-left"><span class="label">Before</span></button>
+            <button class="next btn btn-3 hover-slide-right"><span class="next label">After</span></button>
           </div>
-          <div id="juxtapose-3"></div>
+          <div class="slider3" id="slider3">
+            <div class="slide-container">
+              <div class="slide">
+          <img class="slide-image" src="./images/fm_06.png" alt="user" />
+              </div>
+          </div>
+            <div class="slide-container">
+              <div class="slide">
+          <img class="slide-image" src="./images/fm_05.png" alt="user" />
+              </div>
+        </div>
+          </div>
           <div class="caption">
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
