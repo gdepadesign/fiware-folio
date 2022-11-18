@@ -106,7 +106,7 @@ class StickyNavigation {
     }
   }
 
-  setSliderCss() {
+  setSliderCss(element) {
     let width = 0;
     let left = 0;
     if (this.currentTab) {
@@ -116,7 +116,7 @@ class StickyNavigation {
     $(".sticky-nav-tab-slider").css('width', width);
     $(".sticky-nav-tab-slider").css('left', left);
   }
-  
+
 }
 
 new StickyNavigation();
