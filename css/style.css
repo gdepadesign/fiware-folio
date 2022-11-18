@@ -455,6 +455,12 @@ div.jx-controller {
   width: 5px !important;
   margin-left: -1px !important;
 }
+a.jx-knightlab {
+  display: none !important;
+}
+
+/* Typography */
+
 .label-container {
   width: 100%;
   max-width: 768px;
@@ -476,10 +482,12 @@ div.jx-controller {
   max-width: 768px;
   margin: 0 auto;
   padding-top: 20px;
+  text-align: left;
 }
-a.jx-knightlab {
-  display: none !important;
-}
+
+
+/* Media Queries */
+
 @media only screen and (max-width: 480px) {
   .cover-container {
     background-size: 380%;
