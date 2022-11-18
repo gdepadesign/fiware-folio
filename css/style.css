@@ -493,16 +493,16 @@ a.jx-knightlab {
     padding: 20% 0 0;
   }
   .cover-container .section-content h1 {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
   .cover-container .section-content h2 {
-    font-size: 2em;
+    font-size: 1.8em;
   }
   .intro-container .section-content {
     padding:10% 0;
   }
   .intro-container .section-content h1, .users-container .section-content h1 {
-    font-size: 1.5em;
+    font-size: 1.3em;
     padding-bottom: 0px;
   }
   .objective {
@@ -514,7 +514,7 @@ a.jx-knightlab {
     min-height: auto;
   }
   .architecture-container .section-content h1 {
-    font-size: 1.5em;
+    font-size: 1.3em;
     padding-bottom: 30px;
   }
   .intro-users {
@@ -534,11 +534,11 @@ a.jx-knightlab {
     max-height: 100px;
   }
   .user {
-    font-size: 1.8em;
+    font-size: 1.6em;
     line-height: 1.2em;
   }
   .sticky-nav-tab {
-    font-size: 1em;
+    font-size: .9em;
   }
   .slide-container {
     padding: 90px 0;
