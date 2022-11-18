@@ -22,7 +22,7 @@ class StickyNavigation {
     event.preventDefault();
     let scrollTop =
       $(element.attr("href")).offset().top - this.tabContainerHeight + 1;
-    $("html, body").animate({ scrollTop: scrollTop }, 50);
+    $("html, body").animate({ scrollTop: scrollTop }, 200);
   }
 
   onScroll() {
@@ -38,7 +38,7 @@ class StickyNavigation {
   }
 
   checkHeaderPosition() {
-    const headerHeight = 0;
+    const headerHeight = 55;
     if ($(window).scrollTop() > headerHeight) {
       $(".spa-header").addClass("spa-header--scrolled");
     } else {
@@ -110,11 +110,11 @@ class StickyNavigation {
     let width = 0;
     let left = 0;
     if (this.currentTab) {
-      width = this.currentTab.css("width");
+      width = this.currentTab.css('width');
       left = this.currentTab.offset().left;
     }
-    $(".sticky-nav-tab-slider").css("width", width);
-    $(".sticky-nav-tab-slider").css("left", left);
+    $(".sticky-nav-tab-slider").css('width', width);
+    $(".sticky-nav-tab-slider").css('left', left);
   }
 }
 

@@ -121,11 +121,15 @@ button:disabled {
   display: flex;
   flex-direction: column;
 }
-.intro-container .header, .users-container .header, .architecture-container .header {
+.intro-container .header,
+.users-container .header,
+.architecture-container .header {
   width: 80%;
   max-width: 2560px;
 }
-.intro-container .header h1, .users-container .header h1, .architecture-container .header h1 {
+.intro-container .header h1,
+.users-container .header h1,
+.architecture-container .header h1 {
   padding-bottom: 20px;
   font-size: 30px;
   line-height: 1.5em;
@@ -146,10 +150,10 @@ button:disabled {
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  cursor:default;
+  cursor: default;
 }
 .users-container {
-  padding:5% 0 0;
+  padding: 5% 0 0;
   background-color: #000;
   display: flex;
   flex-direction: column;
@@ -158,12 +162,12 @@ button:disabled {
   padding: 50px 0;
   display: flex;
   flex-direction: row;
-  gap:50px;
+  gap: 50px;
 }
 .user-type {
   display: flex;
   flex-direction: column;
-  gap:50px;
+  gap: 50px;
 }
 .user {
   font-size: 3em;
@@ -172,17 +176,17 @@ button:disabled {
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  cursor:default;
+  cursor: default;
 }
 .user-icons {
   width: 100%;
 }
 .architecture {
-  width:100%;
+  width: 100%;
   padding-bottom: 50px;
 }
 .architecture-container {
-  padding:5% 0 8%;
+  padding: 5% 0 8%;
   min-height: 100vh;
   background-color: #000;
   display: flex;
@@ -199,7 +203,7 @@ button:disabled {
   -moz-osx-font-smoothing: grayscale;
 }
 .slide-container {
-  padding: 8% 0!important;
+  padding: 8% 0 !important;
 }
 
 /*
@@ -258,10 +262,6 @@ button:disabled {
 /* Navigation */
 
 .spa-header {
-  display: none;
-}
-
-/* .spa-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -274,17 +274,18 @@ button:disabled {
   justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  position: fixed;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
-  padding: 0 2em;
-  height: 50px;
+  padding: 0;
+  height: 55px;
   z-index: 2;
   -webkit-transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
-} */
+}
 
 .spa-header--scrolled {
   background: #000;
@@ -292,8 +293,8 @@ button:disabled {
 }
 
 .spa-header--move-up {
-  -webkit-transform: translateY(-50px);
-  transform: translateY(-50px);
+  -webkit-transform: translateY(-75px);
+  transform: translateY(-75px);
   -webkit-transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
@@ -309,7 +310,8 @@ button:disabled {
   color: #fff;
 }
 
-.sticky-nav-tabs, .spa-slide {
+.sticky-nav-tabs,
+.spa-slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -329,16 +331,6 @@ button:disabled {
   text-align: center;
   padding: 0;
 }
-/* .sticky-nav-tabs h1, .spa-slide h1 {
-  font-size: 2rem;
-  margin: 0;
-  letter-spacing: 1rem;
-}
-.sticky-nav-tabs h3, .spa-slide h3 {
-  font-size: 1rem;
-  letter-spacing: 0.3rem;
-  opacity: 0.6;
-} */
 .sticky-nav-tabs-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -353,7 +345,7 @@ button:disabled {
   width: 100%;
   height: 50px;
   /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); */
-  background: #fff;
+  background: #000;
   z-index: 1;
   -webkit-transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
@@ -381,14 +373,15 @@ button:disabled {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  color: #000;
+  color: #fff;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   font-size: 0.8rem;
   max-width: 180px;
 }
 .sticky-nav-tab:hover {
-  background: rgba(0,0,0,.04);
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -397,17 +390,14 @@ button:disabled {
   bottom: 0;
   width: 0;
   height: 6px;
-  background: #000;
+  background: #fff;
   -webkit-transition: left 0.3s ease;
   transition: left 0.3s ease;
 }
- @media (min-width: 800px) {
-
-.sticky-nav-tabs h1,  .spa-slide h1 { font-size: 3rem; }
-
-.sticky-nav-tabs h3,  .spa-slide h3 { font-size: 1rem; }
-
-.sticky-nav-tab { font-size: 1rem; }
+@media (min-width: 800px) {
+  .sticky-nav-tab {
+    font-size: 1rem;
+  }
 }
 
 /* Juxtapose */
@@ -503,7 +493,7 @@ a.jx-knightlab {
   }
   .intro-container .header h1 {
     padding-bottom: 0px;
-}
+  }
   .objective {
     font-size: 2em;
     line-height: 1.3em;
