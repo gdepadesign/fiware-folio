@@ -60,9 +60,10 @@ button:disabled {
 }
 .btn {
   position: relative;
-  display: inline-block;
+  display: flex;
   width: auto;
   height: auto;
+  padding: 0;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -70,7 +71,7 @@ button:disabled {
 }
 .btn span {
   position: relative;
-  display: inline-block;
+  display: block;
   font-family: "Figtree", sans-serif;
   font-size: 14px;
   font-weight: 500;
@@ -89,7 +90,6 @@ button:disabled {
 .btn-2 span {
   color: rgb(255, 255, 255);
   border: 1px solid rgb(255, 255, 255);
-  margin-left: -6px;
 }
 .btn-2 span:hover {
   color: rgb(0, 0, 0);
@@ -103,14 +103,14 @@ button:disabled {
   width: 0%;
 }
 .btn.hover-slide-right:hover::before {
-  width: 120%;
+  width: 100%;
 }
 .btn.hover-slide-up::before {
   bottom: 0;
   left: 0;
   right: 0;
   height: 0%;
-  width: 120%;
+  width: 100%;
 }
 .btn.hover-slide-up:hover::before {
   height: 100%;
