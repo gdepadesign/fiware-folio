@@ -141,7 +141,7 @@ button:disabled {
   -moz-osx-font-smoothing: grayscale;
 }
 .intro-objectives {
-  padding: 2% 0 8%;
+  padding: 2% 0 0;
   white-space: pre-line;
 }
 .objective {
@@ -488,41 +488,57 @@ a.jx-knightlab {
   .cover-container {
     background-size: 380%;
   }
-  .cover-container .header {
-    width: 80%;
+  .cover-container .section-content {
+    width: 100%;
     padding: 20% 0 0;
   }
-  .cover-container .header h2 {
+  .cover-container .section-content h1 {
+    font-size: 1.5em;
+  }
+  .cover-container .section-content h2 {
     font-size: 2em;
   }
-  .intro-container .header h1 {
+  .intro-container .section-content {
+    padding:10% 0;
+  }
+  .intro-container .section-content h1, .users-container .section-content h1 {
+    font-size: 1.5em;
     padding-bottom: 0px;
   }
   .objective {
-    font-size: 2em;
-    line-height: 1.3em;
+    font-size: 1.8em;
+    line-height: 1.2em;
+    font-weight: 700;
   }
   .architecture-container {
     min-height: auto;
   }
+  .architecture-container .section-content h1 {
+    font-size: 1.5em;
+    padding-bottom: 30px;
+  }
   .intro-users {
-    padding: 50px 0 0;
+    padding: 40px 0 0;
     flex-direction: column;
     gap: 40px;
   }
   .user-type {
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     border-bottom: 1px #fff solid;
     padding-bottom: 40px;
   }
   .user-icons {
     width: auto;
-    max-height: 100px;
+    max-height: 70px;
   }
   .user {
-    font-size: 2em;
+    font-size: 1.8em;
+    line-height: 1.2em;
+  }
+  .sticky-nav-tab {
+    font-size: 1em;
   }
   .slide-container {
     padding: 90px 0;
