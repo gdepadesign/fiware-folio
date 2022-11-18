@@ -116,6 +116,7 @@ class StickyNavigation {
     $(".sticky-nav-tab-slider").css('width', width);
     $(".sticky-nav-tab-slider").css('left', left);
   }
+  
 }
 
 new StickyNavigation();

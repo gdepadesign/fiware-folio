@@ -26,7 +26,8 @@ a {
   background-color: #000;
   min-height: 100vh;
 }
-.cover-container .header {
+.cover-container .section-content {
+  margin: 0 auto;
   width: 90%;
   max-width: 2560px;
   padding: 7% 0 0;
@@ -35,7 +36,7 @@ a {
   flex-direction: column;
   justify-content: center;
 }
-.cover-container .header h1 {
+.cover-container .section-content h1 {
   padding-bottom: 20px;
   font-size: 30px;
   line-height: 1.5em;
@@ -45,7 +46,7 @@ a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.cover-container .header h2 {
+.cover-container .section-content h2 {
   padding-bottom: 50px;
   font-size: 3em;
   line-height: 1.2em;
@@ -121,16 +122,16 @@ button:disabled {
   display: flex;
   flex-direction: column;
 }
-.intro-container .header,
-.users-container .header,
-.architecture-container .header {
-  width: 80%;
+.intro-container .section-content,
+.users-container .section-content,
+.architecture-container .section-content {
+  margin: 0 auto;
+  width: 90%;
   max-width: 2560px;
 }
-.intro-container .header h1,
-.users-container .header h1,
-.architecture-container .header h1 {
-  padding-bottom: 20px;
+.intro-container .section-content h1,
+.users-container .section-content h1,
+.architecture-container .section-content h1 {
   font-size: 30px;
   line-height: 1.5em;
   color: #fff;
@@ -140,7 +141,7 @@ button:disabled {
   -moz-osx-font-smoothing: grayscale;
 }
 .intro-objectives {
-  padding-bottom: 50px;
+  padding: 2% 0 8%;
   white-space: pre-line;
 }
 .objective {
@@ -153,13 +154,13 @@ button:disabled {
   cursor: default;
 }
 .users-container {
-  padding: 5% 0 0;
+  padding: 5% 0 8%;
   background-color: #000;
   display: flex;
   flex-direction: column;
 }
 .intro-users {
-  padding: 50px 0;
+  padding: 70px 0 0;
   display: flex;
   flex-direction: row;
   gap: 50px;
@@ -186,13 +187,13 @@ button:disabled {
   padding-bottom: 50px;
 }
 .architecture-container {
-  padding: 5% 0 8%;
+  padding: 5% 0 3%;
   min-height: 100vh;
   background-color: #000;
   display: flex;
   flex-direction: column;
 }
-.architecture-container .header h1 {
+.architecture-container .section-content h1 {
   padding-bottom: 50px;
   font-size: 30px;
   line-height: 1.5em;
@@ -233,8 +234,7 @@ button:disabled {
 .tns-nav {
   display: none;
 } */
-
-.header {
+.section-title {
   width: 100%;
   max-width: 768px;
   margin: 0 auto;
@@ -242,7 +242,7 @@ button:disabled {
   position: relative;
   text-align: left;
 }
-.header h1 {
+.section-title h1 {
   font-size: 20px;
   color: #212121;
   font-weight: 500;
@@ -250,7 +250,7 @@ button:disabled {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.header h2 {
+.section-title h2 {
   font-size: 28px;
   color: #212121;
   font-weight: 700;
