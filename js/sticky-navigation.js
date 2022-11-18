@@ -1,5 +1,3 @@
-jQuery(document).ready(function ($) {
-
 class StickyNavigation {
   constructor() {
     this.currentId = null;
@@ -106,19 +104,16 @@ class StickyNavigation {
     }
   }
 
-  setSliderCss(element) {
+  setSliderCss() {
     let width = 0;
     let left = 0;
     if (this.currentTab) {
-      width = this.currentTab.css('width');
+      width = this.currentTab.css("width");
       left = this.currentTab.offset().left;
     }
-    $(".sticky-nav-tab-slider").css('width', width);
-    $(".sticky-nav-tab-slider").css('left', left);
+    $(".sticky-nav-tab-slider").css("width", width);
+    $(".sticky-nav-tab-slider").css("left", left);
   }
-
 }
 
 new StickyNavigation();
-
-});
