@@ -21,7 +21,7 @@
     <script src="./js/sticky-navigation.js"></script>
 
     <script type="module">
-const slider1 = tns({
+var slider1 = tns({
     container: ".slider1",
     prevButton: ".prev",
     nextButton: ".next",
@@ -31,7 +31,7 @@ const slider1 = tns({
     speed: 400,
 });
 
-const slider2 = tns({
+var slider2 = tns({
     container: ".slider2",
     prevButton: ".prev",
     nextButton: ".next",
@@ -41,7 +41,7 @@ const slider2 = tns({
     speed: 400,
 });
 
-const slider3 = tns({
+var slider3 = tns({
     container: ".slider3",
     prevButton: ".prev",
     nextButton: ".next",
@@ -50,6 +50,7 @@ const slider3 = tns({
     swipeAngle: false,
     speed: 400,
 });
+
 
       var scroll = new SmoothScroll('a[href*="#"]');
 
@@ -154,7 +155,7 @@ const slider3 = tns({
             <button class="prev btn btn-3 hover-slide-left"><span class="label">Before</span></button>
             <button class="next btn btn-3 hover-slide-right"><span class="next label">After</span></button>
           </div>
-          <div class="slider1" id="slider1">
+          <div class="slider1">
             <div class="slide-container">
               <div class="slide">
           <img class="slide-image" src="./images/fm_01.png" alt="user" />
@@ -183,7 +184,7 @@ const slider3 = tns({
             <button class="prev btn btn-3 hover-slide-left"><span class="label">Before</span></button>
             <button class="next btn btn-3 hover-slide-right"><span class="next label">After</span></button>
           </div>
-          <div class="slider2" id="slider2">
+          <div class="slider2">
             <div class="slide-container">
               <div class="slide">
           <img class="slide-image" src="./images/fm_04.png" alt="user" />
@@ -212,7 +213,7 @@ const slider3 = tns({
             <button class="prev btn btn-3 hover-slide-left"><span class="label">Before</span></button>
             <button class="next btn btn-3 hover-slide-right"><span class="next label">After</span></button>
           </div>
-          <div class="slider3" id="slider3">
+          <div class="slider3">
             <div class="slide-container">
               <div class="slide">
           <img class="slide-image" src="./images/fm_06.png" alt="user" />
