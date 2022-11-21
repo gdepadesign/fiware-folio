@@ -22,26 +22,26 @@
 
     <script type="module">
 
-let slider = tns({
-  container: '#slider-1',
-  items: 1,
-  slideBy: 'page',
-  autoplay: false,
-  controlsContainer: '#controls',
-  prevButton: '.prev',
-  nextButton: '.next',
-  autoplayButton: '.auto',
-  center: true,
-  loop: false,
-  swipeAngle: false,
-  speed: 400,
-});
-
+      let slider = tns({
+        container: '#slider-1',
+        items: 1,
+        slideBy: 'page',
+        autoplay: false,
+        controlsContainer: '#controls',
+        prevButton: '.prev',
+        nextButton: '.next',
+        autoplayButton: '.auto',
+        center: true,
+        loop: false,
+        swipeAngle: false,
+        speed: 400,
+      });
 
       var scroll = new SmoothScroll('a[href*="#"]');
 
       AOS.init();
     </script>
+    
   </head>
 
   <body>
@@ -64,8 +64,7 @@ let slider = tns({
           class="intro-objectives"
           data-aos="fade-right"
           data-aos-delay="0"
-          data-aos-easing="ease-in-sine"
-        >
+          data-aos-easing="ease-in-sine">
           <div><span class="objective">Lorem ipsum dolor sit amet</span></div>
           <div><span class="objective">Aenean commodo ligula</span></div>
           <div><span class="objective">Cum sociis natoque penatibus</span></div>
