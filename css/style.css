@@ -228,61 +228,6 @@ button:disabled {
 .page-container {
   padding:8% 0;
 }
-.slide-container {
-  padding:0;
-}
-#slider-mw {
-    border-radius: 8px;
-    box-shadow: 0 0 50px rgb(0 0 0 / 10%);
-}
-.slide {
-  overflow: overlay;
-  max-height: 430px;
-  width: 100%;
-  max-width: 768px;
-  margin: 0 auto;
-}
-.slide-image {
-  width: -webkit-fill-available;
-  cursor: ns-resize;
-}
-.tns-outer {
-  position: relative;
-  max-width: 768px;
-}
-.tns-controls {
-  display: flex;
-  padding-bottom: 20px;
-  position: relative;
-  width: auto;
-  margin: 0 auto;
-  z-index: 99999;
-  top: 0;
-}
-.tns-outer [aria-controls] {
-  padding:0;
-  width: 100%;
-  max-width: 768px;
-  background-color: transparent;
-  box-shadow: none;
-  border: none;
-  font-family: "Figtree", sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-.tns-outer [data-controls="prev"]{
-  text-align: left;
-}
-.tns-outer [data-controls="next"]{
-  text-align: right;
-}
-.tns-nav {
-  display: none;
-}
-
-
 .section-title {
   width: 100%;
   max-width: 768px;
@@ -445,6 +390,30 @@ button:disabled {
   transition: left 0.3s ease;
 }
 
+/* Slider */
+
+#slider-1-mw {
+  width: 100%;
+  max-width: 768px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.tns-nav {
+  display: none;
+}
+
+.slide {
+  overflow: overlay;
+  max-height: 430px;
+  cursor: ns-resize;
+}
+
+.slide-image {
+  max-width: 768px;
+  width: 100%;
+}
+
 /* Juxtapose */
 
 #juxtapose,
@@ -526,8 +495,14 @@ a.jx-knightlab {
   width: 100%;
   max-width: 768px;
   margin: 0 auto;
-  padding-top: 20px;
-  text-align: left;
+  padding-top: 10px;
+}
+
+.caption p {
+  font-size: .9em;
+  font-style: italic;
+  text-align: center;
+  color: #696969;
 }
 
 /* Media Queries */
@@ -588,9 +563,6 @@ a.jx-knightlab {
   .sticky-nav-tab {
     font-size: .9em;
   }
-  .slide-container {
-    padding: 90px 0;
-  }
   .section-title {
     width: 90%;
   }
@@ -601,21 +573,11 @@ a.jx-knightlab {
     max-width: 340px !important;
     max-height: 215px !important;
   }
-  .tns-outer [aria-controls] {
-    color: #000;
-  }
   div.jx-image img {
     max-width: 336px !important;
   }
   .header {
     width: 90%;
-  }
-  .tns-controls {
-    width: 100%;
-    top: 20px;
-  }
-  #slider-mw {
-    min-height: 100vh;
   }
   .label-container {
     width: 90%;
