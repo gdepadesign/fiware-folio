@@ -36,7 +36,7 @@ class StickyNavigation {
   }
 
   checkHeaderPosition() {
-    const headerHeight = 0;
+    const headerHeight = 55;
     if ($(window).scrollTop() > headerHeight) {
       $(".spa-header").addClass("spa-header--scrolled");
     } else {

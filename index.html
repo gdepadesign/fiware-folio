@@ -64,6 +64,28 @@
       var scroll = new SmoothScroll('a[href*="#"]');
 
       AOS.init();
+
+// Get the container element
+var btnContainer = document.getElementById("controls-1");
+
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("btn");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+
+    // If there's no active class
+    if (current.length > 0) {
+      current[0].className = current[0].className.replace(" active", "");
+    }
+
+    // Add the active class to the current/clicked button
+    this.className += " active";
+  });
+}
+
     </script>
 
   </head>
@@ -161,8 +183,8 @@
             <h2>Homepage</h2>
           </div>
           <div class="label-container" id="controls-1">
-            <button id="prev" class="btn btn-3 hover-slide-left"><span class="label">Before</span></button>
-            <button id="next" class="btn btn-3 hover-slide-right"><span class="next label">After</span></button>
+            <button id="prev" class="btn btn-3 hover-slide-left"><span class="label active">Before</span></button>
+            <button id="next" class="btn btn-3 hover-slide-right"><span class="label">After</span></button>
           </div>
           
           <div class="slide-wrapper" id="slider-1">
@@ -184,8 +206,8 @@
             <h2>Category Page</h2>
           </div>
           <div class="label-container" id="controls-2">
-            <button id="prev2" class="btn btn-3 hover-slide-left"><span class="label">Before</span></button>
-            <button id="next2" class="btn btn-3 hover-slide-right"><span class="next label">After</span></button>
+            <button id="prev2" class="btn btn-3 hover-slide-left"><span class="label active">Before</span></button>
+            <button id="next2" class="btn btn-3 hover-slide-right"><span class="label">After</span></button>
           </div>
           
           <div class="slide-wrapper" id="slider-2">
@@ -207,8 +229,8 @@
             <h2>Solution Page</h2>
           </div>
           <div class="label-container" id="controls-3">
-            <button id="prev3" class="btn btn-3 hover-slide-left"><span class="label">Before</span></button>
-            <button id="next3" class="btn btn-3 hover-slide-right"><span class="next label">After</span></button>
+            <button id="prev3" class="btn btn-3 hover-slide-left"><span class="label active">Before</span></button>
+            <button id="next3" class="btn btn-3 hover-slide-right"><span class="label">After</span></button>
           </div>
           
           <div class="slide-wrapper" id="slider-3">
