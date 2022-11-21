@@ -392,7 +392,7 @@ button:disabled {
 
 /* Slider */
 
-#slider-1-mw {
+#slider-1-mw, #slider-2-mw, #slider-3-mw {
   width: 100%;
   max-width: 768px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);

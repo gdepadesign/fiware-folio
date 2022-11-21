@@ -22,8 +22,38 @@
 
     <script type="module">
 
-      let slider = tns({
+      const slider1 = tns({
         container: '#slider-1',
+        items: 1,
+        slideBy: 'page',
+        autoplay: false,
+        controlsContainer: '#controls',
+        prevButton: '.prev',
+        nextButton: '.next',
+        autoplayButton: '.auto',
+        center: true,
+        loop: false,
+        swipeAngle: false,
+        speed: 400,
+      });
+
+      const slider2 = tns({
+        container: '#slider-2',
+        items: 1,
+        slideBy: 'page',
+        autoplay: false,
+        controlsContainer: '#controls',
+        prevButton: '.prev',
+        nextButton: '.next',
+        autoplayButton: '.auto',
+        center: true,
+        loop: false,
+        swipeAngle: false,
+        speed: 400,
+      });
+
+      const slider3 = tns({
+        container: '#slider-3',
         items: 1,
         slideBy: 'page',
         autoplay: false,
@@ -41,7 +71,7 @@
 
       AOS.init();
     </script>
-    
+
   </head>
 
   <body>
@@ -143,10 +173,10 @@
           
           <div class="slide-wrapper" id="slider-1">
             <div>
-              <div class="slide"><img class="slide-image" src="./images/fm_01.png" alt="user" /></div>
+              <div class="slide"><img class="slide-image" src="./images/fm_01.png" alt="slide" /></div>
             </div>
             <div>
-              <div class="slide"><img class="slide-image" src="./images/fm_02.png" alt="user" /></div>
+              <div class="slide"><img class="slide-image" src="./images/fm_02.png" alt="slide" /></div>
             </div>
           </div>
           
@@ -159,26 +189,22 @@
           <div class="section-title">
             <h2>Category Page</h2>
           </div>
-          <div class="label-container">
+          <div class="label-container" id="controls">
             <button class="prev btn btn-3 hover-slide-left"><span class="label">Before</span></button>
             <button class="next btn btn-3 hover-slide-right"><span class="next label">After</span></button>
           </div>
           
           <div class="slide-wrapper" id="slider-2">
             <div>
-              <div class="slide"><img class="slide-image" src="./images/fm_01.png" alt="user" /></div>
+              <div class="slide"><img class="slide-image" src="./images/fm_01.png" alt="slide" /></div>
             </div>
             <div>
-              <div class="slide"><img class="slide-image" src="./images/fm_02.png" alt="user" /></div>
+              <div class="slide"><img class="slide-image" src="./images/fm_02.png" alt="slide" /></div>
             </div>
           </div>
-
+          
           <div class="caption">
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            </p>
+            <p>Scroll to see the full page</p>
           </div>
         </div>
 
@@ -186,20 +212,22 @@
           <div class="section-title">
             <h2>Solution Page</h2>
           </div>
-          <div class="label-container">
+          <div class="label-container" id="controls">
             <button class="prev btn btn-3 hover-slide-left"><span class="label">Before</span></button>
             <button class="next btn btn-3 hover-slide-right"><span class="next label">After</span></button>
           </div>
           
+          <div class="slide-wrapper" id="slider-3">
+            <div>
+              <div class="slide"><img class="slide-image" src="./images/fm_01.png" alt="slide" /></div>
+            </div>
+            <div>
+              <div class="slide"><img class="slide-image" src="./images/fm_02.png" alt="slide" /></div>
+            </div>
+          </div>
           
-          
-
           <div class="caption">
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            </p>
+            <p>Scroll to see the full page</p>
           </div>
         </div>
 
