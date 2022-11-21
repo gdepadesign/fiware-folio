@@ -16,6 +16,8 @@
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/sticky-navigation.js"></script>
+    <script src="./js/btn.js"></script>
+
 
     <script type="module">
 
@@ -64,16 +66,6 @@
       var scroll = new SmoothScroll('a[href*="#"]');
 
       AOS.init();
-
-      var header = document.getElementById("controls-1");
-      var btns = header.getElementsByClassName("btn");
-      for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function() {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-        });
-      }
 
     </script>
 
@@ -172,8 +164,8 @@
             <h2>Homepage</h2>
           </div>
           <div class="label-container" id="controls-1">
-            <button id="prev" class="btn btn-3 hover-slide-left"><span class="label active">Redesign</span></button>
-            <button id="next" class="btn btn-3 hover-slide-right"><span class="label">Before</span></button>
+            <button id="prev" class="btn btn-3 hover-slide-left"><span class="element">Redesign</span></button>
+            <button id="next" class="btn btn-3 hover-slide-right"><span class="element">Before</span></button>
           </div>
           
           <div class="slide-wrapper" id="slider-1">
@@ -195,8 +187,8 @@
             <h2>Category Page</h2>
           </div>
           <div class="label-container" id="controls-2">
-            <button id="prev2" class="btn btn-3 hover-slide-left"><span class="label active">Redesign</span></button>
-            <button id="next2" class="btn btn-3 hover-slide-right"><span class="label">Before</span></button>
+            <button id="prev2" class="btn btn-3 hover-slide-left"><span class="element">Redesign</span></button>
+            <button id="next2" class="btn btn-3 hover-slide-right"><span class="element">Before</span></button>
           </div>
           
           <div class="slide-wrapper" id="slider-2">
@@ -218,8 +210,8 @@
             <h2>Solution Page</h2>
           </div>
           <div class="label-container" id="controls-3">
-            <button id="prev3" class="btn btn-3 hover-slide-left"><span class="label active">Redesign</span></button>
-            <button id="next3" class="btn btn-3 hover-slide-right"><span class="label">Before</span></button>
+            <button id="prev3" class="btn btn-3 hover-slide-left"><span class="element">Redesign</span></button>
+            <button id="next3" class="btn btn-3 hover-slide-right"><span class="element">Before</span></button>
           </div>
           
           <div class="slide-wrapper" id="slider-3">

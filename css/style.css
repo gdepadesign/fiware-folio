@@ -170,7 +170,9 @@ button:disabled {
 .btn.hover-slide-up:hover::before {
   height: 100%;
 }
-.active {
+.btn:disabled {color:#fff; background-color: #000;}
+
+.element.active {
   background-color: #000;
   color: #fff!important;
 }
