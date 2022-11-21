@@ -346,7 +346,7 @@ button:disabled {
 }
 .sticky-nav-tabs-container--top-first {
   position: fixed;
-  top: 55px;
+  top: 0;
   -webkit-transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
