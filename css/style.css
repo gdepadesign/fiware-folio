@@ -32,7 +32,7 @@ a {
 .nav-container {
   display: flex;
   flex-direction: row;
-  gap:20px;
+  gap: 20px;
 }
 /* .label {
   font-weight: 500;
@@ -43,7 +43,7 @@ a {
 .scroll-info {
   margin: 0;
   text-align: right;
-  font-size: .9em;
+  font-size: 0.9em;
   font-style: italic;
   color: #777;
 }
@@ -54,7 +54,7 @@ a {
   padding-top: 10px;
 }
 .caption p {
-  font-size: .9em;
+  font-size: 0.9em;
   font-style: italic;
   text-align: center;
   color: #696969;
@@ -185,7 +185,7 @@ button:disabled {
   width: auto;
   height: auto;
   padding: 0;
-  color:#777;
+  color: #777;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -199,11 +199,11 @@ button:disabled {
   width: 100%;
 }
 .btn-secondary:disabled {
-  color:#000;
-  border-bottom:2px solid #000;
+  color: #000;
+  border-bottom: 2px solid #000;
 }
 .element.active {
-  color:#000;
+  color: #000;
 }
 .intro-container {
   padding: 8% 0;
@@ -345,8 +345,8 @@ button:disabled {
   transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
 .spa-header--scrolled {
-  padding-top:35px;
-  border-top:1px solid #fff;
+  padding-top: 35px;
+  border-top: 1px solid #fff;
   background: #000;
   /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); */
 }
@@ -456,7 +456,9 @@ button:disabled {
 
 /* Slider */
 
-#slider-1-mw, #slider-2-mw, #slider-3-mw {
+#slider-1-mw,
+#slider-2-mw,
+#slider-3-mw {
   width: 100%;
   max-width: 768px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
@@ -478,9 +480,11 @@ button:disabled {
 /* Media Queries */
 
 @media only screen and (max-width: 480px) {
-  .intro-container .section-content, .users-container .section-content, .architecture-container .section-content {
+  .intro-container .section-content,
+  .users-container .section-content,
+  .architecture-container .section-content {
     width: 90%;
-}
+  }
   .cover-container {
     background-size: 380%;
   }
@@ -495,9 +499,10 @@ button:disabled {
     font-size: 1.8em;
   }
   .intro-container .section-content {
-    padding:10% 0;
+    padding: 10% 0;
   }
-  .intro-container .section-content h1, .users-container .section-content h1 {
+  .intro-container .section-content h1,
+  .users-container .section-content h1 {
     font-size: 1.3em;
     padding-bottom: 0px;
   }
@@ -549,15 +554,15 @@ button:disabled {
   }
   .nav-container {
     padding-bottom: 5%;
-}
+  }
   .btn-secondary span {
     font-size: 1.3em;
   }
   .scroll-info {
     text-align: left;
     font-size: 1em;
-}
+  }
   .slide {
     max-height: 200px;
-}
+  }
 }
