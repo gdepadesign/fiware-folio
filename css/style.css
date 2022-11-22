@@ -20,11 +20,16 @@ a {
 
 /* Typography */
 
-.label-container {
+.slider-nav-container {
   width: 100%;
   max-width: 768px;
   margin: 0 auto;
-  padding: 3% 0 2%;
+  padding: 2% 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav-container {
   display: flex;
   flex-direction: row;
   gap:20px;
@@ -35,6 +40,13 @@ a {
   text-transform: uppercase;
   cursor: pointer;
 } */
+.scroll-info {
+  margin: 0;
+  text-align: right;
+  font-size: .9em;
+  font-style: italic;
+  color: #777;
+}
 .caption {
   width: 100%;
   max-width: 768px;
@@ -194,7 +206,7 @@ button:disabled {
   color:#000;
 }
 .intro-container {
-  padding-top: 8%;
+  padding: 8% 0;
   background-color: #000;
   display: flex;
   flex-direction: column;
@@ -203,8 +215,8 @@ button:disabled {
 .users-container .section-content,
 .architecture-container .section-content {
   margin: 0 auto;
-  width: 90%;
-  max-width: 2560px;
+  width: 100%;
+  max-width: 1080px;
 }
 .intro-container .section-content h1,
 .users-container .section-content h1,
@@ -240,7 +252,7 @@ button:disabled {
   padding: 70px 0 0;
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  justify-content: space-between;
 }
 .user-type {
   display: flex;
@@ -284,7 +296,7 @@ button:disabled {
   width: 100%;
   max-width: 768px;
   margin: 0 auto;
-  padding: 08% 0 0;
+  padding: 8% 0 0;
   position: relative;
   text-align: left;
 }
@@ -516,16 +528,20 @@ button:disabled {
     font-size: 1.6em;
     line-height: 1.2em;
   }
-  .section-title {
-    width: 90%;
-  }
   .header {
     width: 90%;
   }
-  .label-container {
-    width: 90%;
+  .spa-slide {
+    width: 90vw;
+    margin: 0 auto;
   }
-  .caption {
-    width: 90%;
+  .section-title {
+    padding: 24% 0 0;
   }
+  .slider-nav-container {
+    padding: 8% 0;
+  }
+  .slide {
+    max-height: 200px;
+}
 }
