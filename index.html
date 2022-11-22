@@ -18,17 +18,15 @@
     <script src="./js/sticky-navigation.js"></script>
     <script src="./js/btn.js"></script>
 
-
     <script type="module">
-
       const slider1 = tns({
-        container: '#slider-1',
+        container: "#slider-1",
         items: 1,
-        slideBy: 'page',
+        slideBy: "page",
         autoplay: false,
-        controlsContainer: '#controls-1',
-        prevButton: '#prev',
-        nextButton: '#next',
+        controlsContainer: "#controls-1",
+        prevButton: "#prev",
+        nextButton: "#next",
         center: true,
         loop: false,
         swipeAngle: false,
@@ -36,13 +34,13 @@
       });
 
       const slider2 = tns({
-        container: '#slider-2',
+        container: "#slider-2",
         items: 1,
-        slideBy: 'page',
+        slideBy: "page",
         autoplay: false,
-        controlsContainer: '#controls-2',
-        prevButton: '#prev2',
-        nextButton: '#next2',
+        controlsContainer: "#controls-2",
+        prevButton: "#prev2",
+        nextButton: "#next2",
         center: true,
         loop: false,
         swipeAngle: false,
@@ -50,13 +48,13 @@
       });
 
       const slider3 = tns({
-        container: '#slider-3',
+        container: "#slider-3",
         items: 1,
-        slideBy: 'page',
+        slideBy: "page",
         autoplay: false,
-        controlsContainer: '#controls-3',
-        prevButton: '#prev3',
-        nextButton: '#next3',
+        controlsContainer: "#controls-3",
+        prevButton: "#prev3",
+        nextButton: "#next3",
         center: true,
         loop: false,
         swipeAngle: false,
@@ -66,9 +64,7 @@
       var scroll = new SmoothScroll('a[href*="#"]');
 
       AOS.init();
-
     </script>
-
   </head>
 
   <body>
@@ -87,11 +83,7 @@
     <div class="intro-container" id="intro">
       <div class="section-content">
         <h1>Objectives</h1>
-        <div
-          class="intro-objectives"
-          data-aos="fade-right"
-          data-aos-delay="0"
-          data-aos-easing="ease-in-sine">
+        <div class="intro-objectives" data-aos="fade-right" data-aos-delay="0" data-aos-easing="ease-in-sine">
           <div><span class="objective">Lorem ipsum dolor sit amet</span></div>
           <div><span class="objective">Aenean commodo ligula</span></div>
           <div><span class="objective">Cum sociis natoque penatibus</span></div>
@@ -110,16 +102,20 @@
         </div>
         <div class="intro-users" data-aos="fade-up" data-aos-delay="150">
           <div class="user-type">
-            <img class="user-icons" src="./images/placeholder-1-1.png" alt="user" /><div class="user">User type 1</div>
+            <img class="user-icons" src="./images/placeholder-1-1.png" alt="user" />
+            <div class="user">User type 1</div>
           </div>
           <div class="user-type">
-            <img class="user-icons" src="./images/placeholder-1-1.png" alt="user" /><div class="user">User type 2</div>
+            <img class="user-icons" src="./images/placeholder-1-1.png" alt="user" />
+            <div class="user">User type 2</div>
           </div>
           <div class="user-type">
-            <img class="user-icons" src="./images/placeholder-1-1.png" alt="user" /><div class="user">User type 3</div>
+            <img class="user-icons" src="./images/placeholder-1-1.png" alt="user" />
+            <div class="user">User type 3</div>
           </div>
           <div class="user-type">
-            <img class="user-icons" src="./images/placeholder-1-1.png" alt="user" /><div class="user">User type 4</div>
+            <img class="user-icons" src="./images/placeholder-1-1.png" alt="user" />
+            <div class="user">User type 4</div>
           </div>
         </div>
         <!--<div data-aos="fade-up" data-aos-anchor-placement="center-bottom"><a href="#architecture">
@@ -159,76 +155,117 @@
       </section>
 
       <main class="spa-main">
-
-        <div  data-aos="fade-up" data-aos-delay="300" class="spa-slide page-container" id="home">
+        <div data-aos="fade-up" data-aos-delay="300" class="page-container" id="home" >
           <div class="section-title">
             <h2>Homepage</h2>
           </div>
           <div class="slider-nav-container">
             <div class="nav-container" id="controls-1">
-              <button id="prev" class="btn-secondary"><span class="element">Redesign</span></button>
-              <button id="next" class="btn-secondary"><span class="element">Before</span></button>
+              <button id="prev" class="btn-secondary">
+                <span class="element">Redesign</span>
+              </button>
+              <button id="next" class="btn-secondary">
+                <span class="element">Before</span>
+              </button>
             </div>
             <p class="scroll-info">Scroll to see the full page</p>
           </div>
-          
+
           <div class="slide-wrapper" id="slider-1">
             <div>
-              <div class="slide"><img class="slide-image" src="./images/pages/fm_home_redesign.png" alt="slide" /></div>
+              <div class="slide">
+                <img class="slide-image" src="./images/pages/fm_home_redesign.png" alt="slide" />
+              </div>
             </div>
             <div>
-              <div class="slide"><img class="slide-image" src="./images/pages/fm_home_before.png" alt="slide" /></div>
+              <div class="slide">
+                <img class="slide-image" src="./images/pages/fm_home_before.png" alt="slide" />
+              </div>
+            </div>
+          </div>
+          <div class="features">
+            <div class="section-title">
+              <h1>What’s new</h1>
+            </div>
+            <div class="new-feature">
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                  natoque penatibus et magnis dis parturient montes, nascetur
+                  ridiculus mus.
+                </p>
+              </div>
+              <div data-aos="fade-up"data-aos-delay="150">
+                <img src="./images/placeholder-3-2.png" alt="user" />
+              </div>
             </div>
           </div>
         </div>
 
-        <div  data-aos="fade-up" data-aos-delay="300" class="spa-slide page-container" id="category">
+        <div data-aos="fade-up" data-aos-delay="300" class="spa-slide page-container" id="category" >
           <div class="section-title">
             <h2>Category Template Page</h2>
           </div>
           <div class="slider-nav-container">
             <div class="nav-container" id="controls-2">
-              <button id="prev2" class="btn-secondary"><span class="element">Redesign</span></button>
-              <button id="next2" class="btn-secondary"><span class="element">Before</span></button>
+              <button id="prev2" class="btn-secondary">
+                <span class="element">Redesign</span>
+              </button>
+              <button id="next2" class="btn-secondary">
+                <span class="element">Before</span>
+              </button>
             </div>
             <p class="scroll-info">Scroll to see the full page</p>
           </div>
-          
+
           <div class="slide-wrapper" id="slider-2">
             <div>
-              <div class="slide"><img class="slide-image" src="./images/pages/fm_category_redesign.png" alt="slide" /></div>
+              <div class="slide">
+                <img class="slide-image" src="./images/pages/fm_category_redesign.png" alt="slide"/>
+              </div>
             </div>
             <div>
-              <div class="slide"><img class="slide-image" src="./images/pages/fm_category_before.png" alt="slide" /></div>
+              <div class="slide">
+                <img class="slide-image" src="./images/pages/fm_category_before.png" alt="slide" />
+              </div>
             </div>
           </div>
         </div>
 
-        <div  data-aos="fade-up" data-aos-delay="300" class="spa-slide page-container" id="solution">
+        <div data-aos="fade-up" data-aos-delay="300" class="spa-slide page-container" id="solution" >
           <div class="section-title">
             <h2>Solution Template Page</h2>
           </div>
           <div class="slider-nav-container">
             <div class="nav-container" id="controls-3">
-              <button id="prev3" class="btn-secondary"><span class="element">Redesign</span></button>
-              <button id="next3" class="btn-secondary"><span class="element">Before</span></button>
+              <button id="prev3" class="btn-secondary">
+                <span class="element">Redesign</span>
+              </button>
+              <button id="next3" class="btn-secondary">
+                <span class="element">Before</span>
+              </button>
             </div>
             <p class="scroll-info">Scroll to see the full page</p>
           </div>
-          
+
           <div class="slide-wrapper" id="slider-3">
             <div>
-              <div class="slide"><img class="slide-image" src="./images/pages/fm_solution_redesign.png" alt="slide" /></div>
+              <div class="slide">
+                <img class="slide-image" src="./images/pages/fm_solution_redesign.png" alt="slide" />
+              </div>
             </div>
             <div>
-              <div class="slide"><img class="slide-image" src="./images/pages/fm_solution_before.png" alt="slide" /></div>
+              <div class="slide">
+                <img class="slide-image" src="./images/pages/fm_solution_before.png" alt="slide" />
+              </div>
             </div>
           </div>
         </div>
-
       </main>
 
     </div>
 
   </body>
+  
 </html>
