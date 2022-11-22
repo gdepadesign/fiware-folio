@@ -478,6 +478,9 @@ button:disabled {
 /* Media Queries */
 
 @media only screen and (max-width: 480px) {
+  .intro-container .section-content, .users-container .section-content, .architecture-container .section-content {
+    width: 90%;
+}
   .cover-container {
     background-size: 380%;
   }
@@ -542,7 +545,18 @@ button:disabled {
   }
   .slider-nav-container {
     padding: 8% 0;
+    flex-direction: column;
   }
+  .nav-container {
+    padding-bottom: 5%;
+}
+  .btn-secondary span {
+    font-size: 1.3em;
+  }
+  .scroll-info {
+    text-align: left;
+    font-size: 1em;
+}
   .slide {
     max-height: 200px;
 }
