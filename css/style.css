@@ -276,7 +276,7 @@ button:disabled {
   padding-bottom: 50px;
 }
 .architecture-container {
-  padding: 5% 0 3%;
+  padding: 5% 0 6%;
   min-height: 100vh;
   background-color: #000;
   display: flex;
@@ -339,27 +339,29 @@ button:disabled {
   left: 0;
   right: 0;
   padding: 0;
-  height: 55px;
+  height: 50px;
   z-index: 2;
   -webkit-transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
 .spa-header--scrolled {
+  padding-top:35px;
+  border-top:1px solid #fff;
   background: #000;
   /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); */
 }
 .spa-header--move-up {
-  -webkit-transform: translateY(-75px);
-  transform: translateY(-75px);
+  -webkit-transform: translateY(-50px);
+  transform: translateY(-50px);
   -webkit-transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
 .spa-header__logo {
   color: #fff;
-  font-size: 1.1em;
-  font-weight: 600;
+  font-size: 1em;
+  font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 5px;
 }
 .spa-header__link {
   margin-left: 1em;
