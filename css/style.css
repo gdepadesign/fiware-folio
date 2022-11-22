@@ -27,7 +27,7 @@ a {
   padding: 3% 0 2%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap:20px;
 }
 /* .label {
   font-weight: 500;
@@ -41,15 +41,12 @@ a {
   margin: 0 auto;
   padding-top: 10px;
 }
-
 .caption p {
   font-size: .9em;
   font-style: italic;
   text-align: center;
   color: #696969;
 }
-
-
 .cover-container {
   background-image: url("https://www.fiware.org/style/imgs/Marketplace/FIWAREMarketplace_Visual.svg");
   height: 100%;
@@ -170,11 +167,31 @@ button:disabled {
 .btn.hover-slide-up:hover::before {
   height: 100%;
 }
-.btn:disabled {color:#fff; background-color: #000;}
-
+.btn-secondary {
+  position: relative;
+  display: flex;
+  width: auto;
+  height: auto;
+  padding: 0;
+  color:#777;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.btn-secondary span {
+  position: relative;
+  display: block;
+  font-family: "Figtree", sans-serif;
+  font-size: 1.2em;
+  font-weight: 500;
+  width: 100%;
+}
+.btn-secondary:disabled {
+  color:#000;
+  border-bottom:2px solid #000;
+}
 .element.active {
-  background-color: #000;
-  color: #fff!important;
+  color:#000;
 }
 .intro-container {
   padding-top: 8%;
@@ -263,14 +280,11 @@ button:disabled {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.page-container {
-  padding:8% 0;
-}
 .section-title {
   width: 100%;
   max-width: 768px;
   margin: 0 auto;
-  padding: 0;
+  padding: 08% 0 0;
   position: relative;
   text-align: left;
 }
@@ -318,19 +332,16 @@ button:disabled {
   -webkit-transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
-
 .spa-header--scrolled {
   background: #000;
   /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); */
 }
-
 .spa-header--move-up {
   -webkit-transform: translateY(-75px);
   transform: translateY(-75px);
   -webkit-transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
-
 .spa-header__logo {
   color: #fff;
   font-size: 1.1em;
@@ -338,12 +349,10 @@ button:disabled {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-
 .spa-header__link {
   margin-left: 1em;
   color: #fff;
 }
-
 .sticky-nav-tabs,
 .spa-slide {
   display: -webkit-box;
@@ -362,6 +371,9 @@ button:disabled {
   /* height: 100vh; */
   position: relative;
   text-align: center;
+}
+.spa-slide {
+  height: 100vh;
 }
 .sticky-nav-tabs-container {
   display: -webkit-box;
@@ -414,7 +426,7 @@ button:disabled {
 }
 .sticky-nav-tab:hover {
   color: #fff;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -436,79 +448,17 @@ button:disabled {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
-
 .tns-nav {
   display: none;
 }
-
 .slide {
   overflow: overlay;
   max-height: 430px;
   cursor: ns-resize;
 }
-
 .slide-image {
   max-width: 768px;
   width: 100%;
-}
-
-/* Juxtapose */
-
-#juxtapose,
-#juxtapose-2,
-#juxtapose-3 {
-  margin: 0 auto;
-  width: 100% !important;
-  max-width: 768px;
-  max-height: 430px;
-  z-index: 0;
-}
-div.jx-slider {
-  height: 100% !important;
-  max-width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
-  color: #000 !important;
-}
-#juxtapose div.jx-image.jx-left,
-#juxtapose div.jx-image.jx-right {
-  cursor: ns-resize;
-}
-#juxtapose-2 div.jx-image.jx-left,
-#juxtapose-3 div.jx-image.jx-left {
-  cursor: initial;
-}
-#juxtapose-2 div.jx-image.jx-right,
-#juxtapose-3 div.jx-image.jx-right {
-  cursor: ns-resize;
-}
-div.jx-image.jx-left,
-div.jx-image.jx-right {
-  overflow-x: hidden !important;
-}
-div.jx-left {
-  overflow: overlay !important;
-}
-div.jx-right {
-  overflow: overlay !important;
-  top: 0;
-}
-div.jx-image img {
-  max-width: 768px !important;
-  width: auto !important;
-  height: auto !important;
-  position: relative !important;
-}
-div.jx-control {
-  background-color: rgba(0, 0, 0, 0.1) !important;
-}
-div.jx-controller {
-  height: 50px !important;
-  width: 5px !important;
-  margin-left: -1px !important;
-}
-a.jx-knightlab {
-  display: none !important;
 }
 
 /* Media Queries */
@@ -566,21 +516,8 @@ a.jx-knightlab {
     font-size: 1.6em;
     line-height: 1.2em;
   }
-  .sticky-nav-tab {
-    font-size: .9em;
-  }
   .section-title {
     width: 90%;
-  }
-  #juxtapose,
-  #juxtapose-2,
-  #juxtapose-3 {
-    width: 90% !important;
-    max-width: 340px !important;
-    max-height: 215px !important;
-  }
-  div.jx-image img {
-    max-width: 336px !important;
   }
   .header {
     width: 90%;
