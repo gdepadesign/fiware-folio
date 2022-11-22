@@ -249,7 +249,7 @@ button:disabled {
   flex-direction: column;
 }
 .intro-users {
-  padding: 70px 0 0;
+  padding: 5% 0 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -257,11 +257,11 @@ button:disabled {
 .user-type {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 40px;
 }
 .user {
-  font-size: 3em;
-  line-height: 1.3em;
+  font-size: 2em;
+  line-height: 1em;
   color: #fff;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
