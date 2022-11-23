@@ -438,9 +438,9 @@ button:disabled {
   position: relative;
   text-align: center;
 }
-.spa-slide {
+/* .spa-slide {
   height: 100vh;
-}
+} */
 .sticky-nav-tabs-container {
   display: -webkit-box;
   display: -ms-flexbox;
