@@ -294,6 +294,9 @@ button:disabled {
 }
 .page-container {
   min-height: 100vh;
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 .section-title {
   width: 100%;
@@ -320,12 +323,10 @@ button:disabled {
   -moz-osx-font-smoothing: grayscale;
 }
 .features {
-  margin: 50px auto 0;
-  width: 100%;
-  max-width: 1080px;
+  margin: 100px auto 0;
   border-top: 1px solid #c6c6c6;
   border-bottom: 1px solid #000;
-  padding: 40px 0 100px;
+  padding: 80px 0 60px;
 }
 .features .section-title {
   margin: 0 auto;
@@ -346,12 +347,19 @@ button:disabled {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 12px;
-  padding: 4% 0 0;
+  gap: 30px;
+  padding: 60px 0 40px;
 }
-
+.new-feature .content {
+  max-width: 30%;
+}
+.new-feature h1 {
+  font-size: 2.5em;
+  line-height: 1.1em;
+  font-weight: 700;
+  margin-top: 0;
+}
 .new-feature p {
-  width: 300px;
   margin: 0;
   text-align: left;
 }
@@ -623,4 +631,7 @@ button:disabled {
     flex-direction: column;
     gap: 30px;
   }
+.new-feature .content {
+  max-width: 100%;
+}
 }
