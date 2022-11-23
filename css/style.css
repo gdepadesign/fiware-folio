@@ -665,7 +665,7 @@ button:disabled {
     gap: 0px;
   }
   .new-feature-l {
-    padding: 0px;
+    padding: 0 0 40px;
   }
   .new-feature-r {
     padding: 40px 0;
