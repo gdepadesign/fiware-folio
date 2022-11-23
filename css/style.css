@@ -636,11 +636,11 @@ button:disabled {
     padding-bottom: 5%;
   }
   .btn-secondary span {
-    font-size: 1.3em !important;
+    font-size: 1.5em !important;
   }
   .scroll-info {
     text-align: left;
-    font-size: 1em;
+    font-size: 1.1em;
   }
   .slide {
     max-height: 200px;
