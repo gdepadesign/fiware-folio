@@ -623,7 +623,7 @@ button:disabled {
     margin: 0 auto;
   }
   .section-title {
-    padding: 24% 0 0;
+    padding: 30% 0 0;
   }
   .slider-nav-container {
     padding: 8% 0;
@@ -643,7 +643,7 @@ button:disabled {
     max-height: 200px;
   }
   .features {
-    padding: 100px 0;
+    padding: 100px 0 50px;
   }
   .features .section-title {
     padding-bottom: 15px;
@@ -652,7 +652,7 @@ button:disabled {
     text-align: left;
   }
   .content {
-    padding-top:20px;
+    padding-top:40px;
   }
   .new-feature-l, .new-feature-r {
     flex-direction: column;
@@ -675,7 +675,7 @@ button:disabled {
     text-align: left;
   }
   .new-feature-l img, .new-feature-r img {
-    max-width: none;
+    max-width: -webkit-fill-available;
     width: 100%;
   }
 }
