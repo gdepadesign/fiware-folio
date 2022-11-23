@@ -320,19 +320,18 @@ button:disabled {
   -moz-osx-font-smoothing: grayscale;
 }
 .features {
-    margin: 0 auto;
+    margin: 50px auto 0;
     width: 100%;
     max-width: 1080px;
+    border-top: 1px solid #c6c6c6;
     border-bottom: 1px solid #000;
-    padding-bottom: 4%;
+    padding: 40px 0 100px;
 }
 .features .section-title {
     margin: 0 auto;
     width: 100%;
     max-width: 1080px;
-    padding-top: 4%;
-    margin-top: 8%;
-    border-top: 1px solid #000;
+    padding: 0;
 }
 .features .section-title h1 {
   font-size: 1.6em;
@@ -587,7 +586,7 @@ button:disabled {
   .header {
     width: 90%;
   }
-  .spa-slide {
+  .page-container {
     width: 90vw;
     margin: 0 auto;
   }
@@ -602,7 +601,7 @@ button:disabled {
     padding-bottom: 5%;
   }
   .btn-secondary span {
-    font-size: 1.3em;
+    font-size: 1.3em!important;
   }
   .scroll-info {
     text-align: left;
@@ -610,5 +609,18 @@ button:disabled {
   }
   .slide {
     max-height: 200px;
+  }
+.features {
+    padding: 40px 0;
+  }
+  .features .section-title {
+    padding-bottom: 15px;
+  }
+  .features .section-title h1 {
+    text-align: left;
+  }
+  .new-feature {
+    flex-direction: column;
+    gap: 30px;
   }
 }
