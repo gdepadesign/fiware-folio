@@ -292,6 +292,9 @@ button:disabled {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.page-container {
+  min-height: 100vh;
+}
 .section-title {
   width: 100%;
   max-width: 768px;
