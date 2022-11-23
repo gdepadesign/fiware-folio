@@ -339,6 +339,9 @@ button:disabled {
   max-width: 1080px;
   padding: 0;
 }
+.content {
+  max-width: 15%;
+}
 .features .section-title h1 {
   font-size: 1.2em;
   color: #000;
@@ -363,7 +366,7 @@ button:disabled {
   flex-direction: row;
   justify-content: center;
   gap: 30px;
-  padding: 60px 0 40px;
+  padding: 80px 0 40px;
 }
 .new-feature-l h1 {
   font-size: 1.8em;
