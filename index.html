@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -63,6 +63,8 @@
         loop: false,
         swipeAngle: false,
         speed: 400,
+        mouseDrag: false,
+        touch: false,
       });
 
       var scroll = new SmoothScroll('a[href*="#"]');
@@ -135,7 +137,7 @@
           <h1>Architecture</h1>
         </div>
         <div data-aos="fade-up" data-aos-delay="150">
-          <img class="architecture" src="./images/placeholder-3-2.png" alt="user" />
+          <img class="architecture" src="./images/sitemap/fm_sitemap.png" alt="user" />
         </div>
       </div>
     </div>
@@ -191,7 +193,7 @@
             <div class="section-title">
               <h1>What’s new</h1>
             </div>
-            <div class="new-feature-r" data-aos="fade-up">
+            <div class="new-feature-r" data-aos="fade-up" data-aos-offset="100">
                 <div class="image-wrapper">
                   <div class="feature-image">
                     <img src="./images/features/home/fm_home_product-by-category.png" alt="user" />
@@ -199,11 +201,13 @@
                 </div>
               <div class="content">
                 <h1>Categories</h1>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
               </div>
             </div>
-            <div class="new-feature-l" data-aos="fade-up">
+            <div class="new-feature-l" data-aos="fade-up" data-aos-offset="150">
               <div class="content">
                 <h1>Featured Solutions</h1>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
               </div>
               <div class="image-wrapper">
                 <div class="feature-image">
@@ -211,7 +215,7 @@
                 </div>
               </div>
             </div>
-            <div class="new-feature-r" data-aos="fade-up">
+            <div class="new-feature-r" data-aos="fade-up" data-aos-offset="200">
                 <div class="image-wrapper">
                   <div class="feature-image">
                     <img src="./images/features/home//fm_home_impact-stories.png" alt="user" />
@@ -219,6 +223,7 @@
                 </div>
                 <div class="content">
                   <h1>Impact Stories</h1>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
                 </div>
             </div>
           </div>

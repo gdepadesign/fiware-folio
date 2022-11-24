@@ -273,17 +273,17 @@ button:disabled {
 }
 .architecture {
   width: 100%;
-  padding-bottom: 50px;
+  padding-bottom: 0px;
 }
 .architecture-container {
-  padding: 5% 0 6%;
-  min-height: 100vh;
+  padding: 8% 0 15%;
+  /* min-height: 100vh; */
   background-color: #000;
   display: flex;
   flex-direction: column;
 }
 .architecture-container .section-content h1 {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   font-size: 30px;
   line-height: 1.5em;
   color: #fff;
@@ -308,7 +308,7 @@ button:disabled {
   width: 100%;
   max-width: 768px;
   margin: 0 auto;
-  padding: 15% 0 0;
+  padding: 8em 0 0;
   position: relative;
   text-align: left;
 }
@@ -340,7 +340,7 @@ button:disabled {
   padding: 0;
 }
 .content {
-  max-width: 15%;
+  max-width: 30%;
 }
 .features .section-title h1 {
   font-size: 1.2em;
@@ -357,15 +357,15 @@ button:disabled {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 30px;
-  padding: 60px 0 0;
+  gap: 50px;
+  padding: 40px 0 0;
   /* border-bottom: 1px solid #ebebeb; */
 }
 .new-feature-r {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 30px;
+  gap: 50px;
   padding: 80px 0 40px;
 }
 .new-feature-l h1 {
@@ -379,11 +379,12 @@ button:disabled {
   font-size: 1.8em;
   line-height: 1.3em;
   font-weight: 400;
-  text-align: right;
+  text-align: left;
   margin-top: 0;
 }
 .new-feature-l p,
 .new-feature-r p {
+  line-height: 1.5em;
   margin: 0;
   text-align: left;
 }
@@ -393,8 +394,11 @@ button:disabled {
   max-width: 680px;
   width: auto;
   padding: 30px;
+  border: 1px solid rgb(0 0 0 / 0%);
   box-shadow: 0 0 50px rgb(0 0 0 / 10%);
   border-radius: 8px;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
 }
 
 /* Navigation */
@@ -633,7 +637,7 @@ button:disabled {
     flex-direction: column;
   }
   .nav-container {
-    padding-bottom: 5%;
+    padding-bottom: 30px;
   }
   .btn-secondary span {
     font-size: 1.5em !important;
@@ -656,19 +660,19 @@ button:disabled {
   }
   .content {
     max-width: fit-content;
-    padding-top: 20px;
+    padding: 0 0 30px;
   }
   .new-feature-l,
   .new-feature-r {
-    /* overflow: overlay; */
-    flex-direction: column;
     gap: 0px;
   }
   .new-feature-l {
-    padding: 0 0 40px;
+    padding: 40px 0;
+    flex-direction: column;
   }
   .new-feature-r {
     padding: 40px 0;
+    flex-direction: column-reverse;
   }
   .new-feature-l .content {
     max-width: 90%;
