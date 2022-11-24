@@ -32,7 +32,7 @@ a {
 .nav-container {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 30px;
 }
 /* .label {
   font-weight: 500;
@@ -254,7 +254,8 @@ button:disabled {
   flex-direction: row;
   justify-content: space-between;
 }
-.user-type {
+.user-type,
+.user-type-last {
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -262,8 +263,9 @@ button:disabled {
 .user {
   font-size: 2em;
   line-height: 1em;
-  color: #fff;
   font-weight: 700;
+  color: #fff;
+  text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   cursor: default;
@@ -590,6 +592,9 @@ button:disabled {
     font-size: 1.3em;
     padding-bottom: 0px;
   }
+  .users-container {
+    padding: 5% 0 15%;
+  }
   .objective {
     font-size: 1.8em;
     line-height: 1.2em;
@@ -613,6 +618,12 @@ button:disabled {
     gap: 30px;
     border-bottom: 1px #fff solid;
     padding-bottom: 40px;
+  }
+  .user-type-last {
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    /* padding-bottom: 40px; */
   }
   .user-icons {
     width: auto;
@@ -640,11 +651,11 @@ button:disabled {
     padding-bottom: 30px;
   }
   .btn-secondary span {
-    font-size: 1.5em !important;
+    font-size: 20px !important;
   }
   .scroll-info {
     text-align: left;
-    font-size: 1.1em;
+    font-size: 1em;
   }
   .slide {
     max-height: 200px;
@@ -674,7 +685,8 @@ button:disabled {
     padding: 40px 0;
     flex-direction: column-reverse;
   }
-  .new-feature-l .content {
+  .new-feature-l .content,
+  .new-feature-r .content {
     max-width: 90%;
   }
   .new-feature-l h1 {
