@@ -729,6 +729,9 @@ img#img-card {
   .feature-image-v {
     width: 100%;
   }
+  #no-overflow {
+    overflow: hidden;
+  }
   #width-100 {
     width: 100%;
   }
