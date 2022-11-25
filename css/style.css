@@ -464,6 +464,10 @@ img.img-submit {
   box-shadow: none;
 }
 
+img.img-submit {
+  max-width: 520px;
+}
+
 img#img-card {
   box-shadow: 0 0 50px rgb(0 0 0 / 10%);
 }
