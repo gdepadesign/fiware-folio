@@ -459,7 +459,8 @@ button:disabled {
   transition: all 0.1s ease; */
 }
 
-img.img-category {
+img.img-category,
+img.img-submit {
   box-shadow: none;
 }
 
@@ -467,7 +468,8 @@ img#img-card {
   box-shadow: 0 0 50px rgb(0 0 0 / 10%);
 }
 
-.img-category {
+.img-category,
+.img-submit {
   padding: 0px !important;
 }
 
