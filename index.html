@@ -67,6 +67,22 @@
         touch: false,
       });
 
+        const slider4 = tns({
+          container: "#slider-4",
+          items: 1,
+          slideBy: "page",
+          autoplay: false,
+          controlsContainer: "#controls-4",
+          prevButton: "#prev4",
+          nextButton: "#next4",
+          center: true,
+          loop: false,
+          swipeAngle: false,
+          speed: 400,
+          mouseDrag: false,
+          touch: false,
+        });
+
       var scroll = new SmoothScroll('a[href*="#"]');
 
       AOS.init();
@@ -158,7 +174,7 @@
           <a class="sticky-nav-tab" href="#home">Home</a>
           <a class="sticky-nav-tab" href="#category">Category</a>
           <a class="sticky-nav-tab" href="#solution">Solution</a>
-          <!--<a class="sticky-nav-tab" href="#submit">Submit</a>-->
+          <a class="sticky-nav-tab" href="#submit">Submit</a>
           <span class="sticky-nav-tab-slider"></span>
         </div>
       </section>
@@ -192,6 +208,7 @@
               </div>
             </div>
           </div>
+
           <div class="features">
             <div class="section-title">
               <h1>What’s new</h1>
@@ -265,6 +282,7 @@
               </div>
             </div>
           </div>
+
           <div class="features">
             <div class="section-title">
               <h1>What’s new</h1>
@@ -337,7 +355,9 @@
                 <img class="slide-image" src="./images/pages/fm_solution_before.png" alt="slide" />
               </div>
             </div>
-          </div><div class="features">
+          </div>
+
+          <div class="features">
             <div class="section-title">
               <h1>What’s new</h1>
             </div><div class="new-feature-r" data-aos="fade-up" data-aos-offset="200">
@@ -366,6 +386,60 @@
                       <img src="./images/features/solution/fm_solution_related_mobile.png" alt="Related Solutions">
                   </picture>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="divider" data-aos="fade-up" data-aos-delay="200"></div>
+        
+        <div data-aos="fade-up" data-aos-delay="200" class="spa-slide page-container" id="submit">
+          <div class="section-title">
+            <h2>Submit Page</h2>
+          </div>
+          <div class="slider-nav-container">
+            <div class="nav-container" id="controls-4">
+              <button id="prev4" class="btn-secondary">
+                <span class="element">Redesign</span>
+              </button>
+              <button id="next4" class="btn-secondary">
+                <span class="element">Before</span>
+              </button>
+            </div>
+            <p class="scroll-info">Scroll the image below</p>
+          </div>
+        
+          <div class="slide-wrapper" id="slider-4">
+            <div>
+              <div class="slide">
+                <img class="slide-image" src="./images/pages/fm_submit_redesign.png" alt="slide" />
+              </div>
+            </div>
+            <div>
+              <div class="slide" id="no-overflow">
+                <img class="slide-image" src="./images/pages/fm_submit_before.png" alt="slide" />
+              </div>
+            </div>
+          </div>
+        
+          <div class="features">
+            <div class="section-title">
+              <h1>What’s new</h1>
+            </div>
+            <div class="new-feature-r" data-aos="fade-up" data-aos-offset="200">
+              <div class="image-wrapper" id="no-overflow">
+                <div class="feature-image" id="width-100">
+                  <picture>
+                    <source media="(min-width: 481px)" srcset="./images/features/solution/fm_solution_details-card.png"
+                      sizes="100vw" alt="Card Solution Details">
+                    <img id="product-card" src="./images/features/solution/fm_solution_details-card_mobile.png"
+                      alt="Card Solution Details">
+                  </picture>
+                </div>
+              </div>
+              <div class="content">
+                <h1>Submission Form</h1>
+                <p>A new layout that shows all the information in details. Fixed on the top right in order to allow the user to quickly visit the official website or connecting with the provider.</p>
               </div>
             </div>
           </div>
