@@ -413,6 +413,9 @@ img#img-card {
 #noshadow {
   box-shadow: none;
 }
+#product-card {
+  padding:0!important;
+}
 
 /* Navigation */
 
@@ -714,8 +717,17 @@ img#img-card {
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
   }
+  .image-wrapper-m {
+    overflow: overlay;
+    max-height: 380px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
   .feature-image {
     width: 200%;
+  }
+  .feature-image-v {
+    width: 100%;
   }
   #width-100 {
     width: 100%;
