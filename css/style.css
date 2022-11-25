@@ -662,11 +662,11 @@ img#img-card {
     padding-bottom: 30px;
   }
   .btn-secondary span {
-    font-size: 20px !important;
+    font-size: 18px !important;
   }
   .scroll-info {
     text-align: left;
-    font-size: 1em;
+    font-size: 15px;
   }
   .slide {
     max-height: 200px;
@@ -675,7 +675,7 @@ img#img-card {
     padding: 100px 0 50px;
   }
   .features .section-title {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
   .features .section-title h1 {
     text-align: left;
@@ -695,10 +695,6 @@ img#img-card {
   .new-feature-r {
     padding: 40px 0;
     flex-direction: column-reverse;
-  }
-  .new-feature-l .content,
-  .new-feature-r .content {
-    max-width: 90%;
   }
   .new-feature-l h1 {
     font-size: 1.8em;
