@@ -267,9 +267,13 @@ button:disabled {
   padding: 2% 0 0;
   white-space: pre-line;
 }
-
+.objectives {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
 .objective {
-  font-size: 4em;
+  font-size: 6em;
   line-height: 1.5em;
   color: #fff;
   font-weight: 700;
@@ -277,7 +281,15 @@ button:disabled {
   -moz-osx-font-smoothing: grayscale;
   cursor: default;
 }
-
+.excerpt {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  color: #fff;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: default;
+}
 .users-container {
   padding: 5% 0 8%;
   background-color: #000;
