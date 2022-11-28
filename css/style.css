@@ -224,7 +224,7 @@ button:disabled {
   display: flex;
   align-items: center;
   gap: 10px;
- }
+}
 
 .btn-tertiary:hover {
   border: 1px solid #fff;
@@ -232,7 +232,7 @@ button:disabled {
   -moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
- }
+}
 
 .element.active {
   color: #000;
@@ -710,7 +710,7 @@ img#img-card {
   max-width: 768px;
   margin: 0 auto;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  border-radius: 8px!important;
 }
 
 .tns-nav {
@@ -863,10 +863,9 @@ img#img-card {
 
   .slide {
     max-height: 200px;
-    border-radius: 8px;
   }
 
-/* .slide-image {
+  /* .slide-image {
   border-radius: 8px;
 } */
 
