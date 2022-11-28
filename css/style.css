@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: "Figtree", sans-serif;
   cursor: default;
+  background-color: #000;
 }
 
 :active,
@@ -19,6 +20,10 @@ body {
 
 a {
   text-decoration: none;
+}
+
+main {
+  background-color: #f9f9f9;
 }
 
 /* Typography */
@@ -266,12 +271,14 @@ button:disabled {
 .intro-objectives {
   padding: 30px 0 0;
 }
+
 .objectives {
   display: flex;
   flex-direction: column;
   gap: 0px;
   padding: 0 0 30px;
 }
+
 .objective {
   font-size: 6em;
   line-height: 1.3em;
@@ -281,6 +288,7 @@ button:disabled {
   -moz-osx-font-smoothing: grayscale;
   cursor: default;
 }
+
 .excerpt {
   font-size: 1.4em;
   line-height: 1.5em;
@@ -290,6 +298,7 @@ button:disabled {
   -moz-osx-font-smoothing: grayscale;
   cursor: default;
 }
+
 .users-container {
   padding: 120px 0 0;
   background-color: #000;
@@ -467,16 +476,17 @@ button:disabled {
   max-width: 680px;
   width: auto;
   padding: 30px;
+  background-color: #fff;
   box-shadow: 0 0 50px rgb(0 0 0 / 10%);
   border-radius: 8px;
   /* -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease; */
 }
 
-img.img-category,
+/* img.img-category,
 img.img-submit {
   box-shadow: none;
-}
+} */
 
 img.img-submit {
   max-width: 520px;
@@ -489,10 +499,6 @@ img#img-card {
 .img-category,
 .img-submit {
   padding: 0px !important;
-}
-
-#noshadow {
-  box-shadow: none;
 }
 
 #product-card {
@@ -649,10 +655,14 @@ img#img-card {
 
 /* Slider */
 
-#slider-1-mw, #slider-1-iw,
-#slider-2-mw, #slider-2-iw,
-#slider-3-mw, #slider-3-iw,
-#slider-4-mw, #slider-4-iw {
+#slider-1-mw,
+#slider-1-iw,
+#slider-2-mw,
+#slider-2-iw,
+#slider-3-mw,
+#slider-3-iw,
+#slider-4-mw,
+#slider-4-iw {
   width: 100%;
   max-width: 768px;
   margin: 0 auto;
@@ -708,9 +718,9 @@ img#img-card {
     font-size: 1.8em;
   }
 
-  .intro-container .section-content {
-    /* padding: 10% 0; */
-  }
+  /* .intro-container .section-content {
+    padding: 10% 0;
+  } */
 
   .intro-container .section-content h1,
   .users-container .section-content h1 {
@@ -734,7 +744,7 @@ img#img-card {
     font-size: 16px;
     line-height: 1.5em;
     font-weight: 500;
-}
+  }
 
   .architecture-container {
     min-height: auto;
