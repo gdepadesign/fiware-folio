@@ -649,10 +649,10 @@ img#img-card {
 
 /* Slider */
 
-#slider-1-mw,
-#slider-2-mw,
-#slider-3-mw,
-#slider-4-mw {
+#slider-1-mw, #slider-1-iw,
+#slider-2-mw, #slider-2-iw,
+#slider-3-mw, #slider-3-iw,
+#slider-4-mw, #slider-4-iw {
   width: 100%;
   max-width: 768px;
   margin: 0 auto;
@@ -727,6 +727,7 @@ img#img-card {
     line-height: 1.2em;
     font-weight: 700;
     letter-spacing: -2px;
+    padding: 0 0 5px;
   }
 
   .excerpt {
