@@ -863,11 +863,12 @@ img#img-card {
 
   .slide {
     max-height: 200px;
+    border-radius: 8px;
   }
 
-.slide-image {
+/* .slide-image {
   border-radius: 8px;
-}
+} */
 
   .features {
     padding: 100px 0 70px;
