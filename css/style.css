@@ -921,14 +921,14 @@ img#img-card {
   .image-wrapper {
     overflow: overlay;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-radius: 8px!important;
   }
 
   .image-wrapper-m {
     overflow: overlay;
     max-height: 380px;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-radius: 8px!important;
   }
 
   .feature-image {
