@@ -758,7 +758,8 @@ img#img-card {
   }
 
   .cover-container .section-content h2 {
-    font-size: 1.8em;
+    font-size: 2em;
+    line-height: 1.4em;
   }
 
   /* .intro-container .section-content {
